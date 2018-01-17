@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>index</title>
+    <title>Sign up</title>
     <link href="https://fonts.googleapis.com/css?family=Bellefair|Dancing+Script|Lobster|Ranga" rel="stylesheet">
     <link rel="stylesheet" href="../vendors/materialize/css/materialize.min.css">
     <link rel="stylesheet" href="../css/signup.css">
@@ -13,32 +13,37 @@
     <!-- estructura de registro -->
     <main>
       <div class="contariner-signup">
+        <h2>Sing up</h2>
         <div class="row">
-         <form class="col s12">
-           <!-- Name-->
-           <div class="row">
-             <div class="input-field col s6">
-               <input placeholder="Placeholder" id="first_name" type="text" class="validate">
-               <label for="first_name">Name</label>
-             </div>
-           </div>
-            <!-- Email-->
-           <div class="row">
-             <div class="input-field col s12">
-               <input id="password" type="password" class="validate">
-               <label for="password">Password</label>
-             </div>
-           </div>
-           <!-- Password-->
-           <div class="row">
-             <div class="input-field col s12">
-               <input id="email" type="email" class="validate">
-               <label for="email">Email</label>
-             </div>
-           </div>
-         </form>
-       </div>
-      </div>
+          <form class="col s12">
+            <!--Name-->
+            <div class="row">
+              <div class="input-field col s12">
+                <input id="first_name" type="text" class="validate">
+                <label for="first_name">Name</label>
+              </div>
+            </div>
+            <!--Email-->
+            <div class="row">
+              <div class="input-field col s12">
+                <input id="email" type="email" class="validate">
+                <label for="email">Email</label>
+              </div>
+            </div>
+            <!--Password-->
+            <div class="row">
+              <div class="input-field col s12">
+                <input id="password" type="password" class="validate">
+                <label for="password">Password</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="bnt signup col s12 center">
+                <button class="btn" type="button" name="button">Sign up</button>
+              </div>
+            </div>
+          </form>
+        </div>
     </main>
   <!-- enlazando archivos js -->
     <script src="../vendors/jquery/jquery-3.2.1.min.js"></script>
