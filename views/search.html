@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>movifai</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Import materialize.css-->
+  <link type="text/css" rel="stylesheet" href="../vendors/materialize/css/materialize.min.css" media="screen,projection" />
+  <link rel="stylesheet" href="../css/search.css">
+</head>
+
+<body class="bg-primary text-color" id="body-search">
+  <nav class="bg-primary" id="nav-search">
+    <div class="nav-wrapper row " id="nab-wrapper">
+      <div class="col s4 m4 l4 left-align icon-logo" id="icon-logo">
+        <a href="#">Logo</a>
+      </div>
+      <!-- Inicio selección tematizada -->
+      <div class="col s4 m4 l4 center-align  icon-theme" id="icon-theme">
+        <p class="icon-theme-text" id="icon-theme-text">Alegra tu dia</p>
+      </div>
+      <!--Fin selección tematizada  -->
+      <!-- Inicio de menu slide-out -->
+      <div class="col s4 m4 l4 right-align icon-user" id="icon-user">
+        <ul id="slide-out" class="side-nav search-side-nav" id="search-side-nav">
+          <li>
+            <div class="user-view search-user-view bg-secondary" id="search-user-view">
+              <div class="background bg-secondary">
+                  <a href="#">Logo</a>
+                <!-- <img class="circle user-avatar" id="user-avatar" src="http://voice4thought.org/wp-content/uploads/2016/08/default1.jpg"> -->
+              </div>
+              <a href="#!user" class="center-align">
+                <img class="circle user-avatar" id="user-avatar" src="http://voice4thought.org/wp-content/uploads/2016/08/default1.jpg">
+              </a>
+              <a href="#!name">
+                <span class="white-text name">John Doe</span>
+              </a>
+              <a href="#!email">
+                <span class="white-text email">jdandturk@gmail.com</span>
+              </a>
+            </div>
+          </li>
+          <li>
+            <a href="#!">
+              <i class="material-icons">cloud</i>First Link With Icon</a>
+          </li>
+          <li>
+            <a href="#!">Second Link</a>
+          </li>
+          <li>
+            <div class="divider"></div>
+          </li>
+          <li>
+            <a class="subheader">Subheader</a>
+          </li>
+          <li>
+            <a class="waves-effect" href="#!">Third Link With Waves</a>
+          </li>
+        </ul>
+        <a href="#" data-activates="slide-out" class="button-collapse show-on-large">User</a>
+      </div>
+      <!--Fin de menu slide-out  -->
+    </div>
+  </nav>
+  <!-- header-nav -->
+  <div class="container">
+    <div class="row">
+      <div class="col s12 m12 l12 center-align">
+        <form class="search-form" id="search-form">
+          <div class="input-field circle" id="input-field">
+            <input id="search" class="search-input" type="search" required>
+            <label class="label-icon right-align" id=" label-icon " for="search ">
+              <i class="material-icons">search</i>
+            </label>
+          </div>
+        </form>
+      </div>
+    </div>
+    <br>
+    <br>
+    <!-- section de resultados de búsqueda -->
+    <div class="row">
+      <div class="col s4 m4">
+        <div class="card search-card" id="search-card">
+          <div class="card-image search-card-image waves-effect waves-block waves-light" id="search-card-image">
+            <img class="activator search-img-activator" id="search-img-activator" src="../assets/img/chihiro-movie.jpg">
+          </div>
+          <div class="card-content search-card-content bg-primary" id="search-card-content">
+            <span class="card-title activator text-darken-4 first-card-title" id="search-card-title">Movie Title
+              <i class="material-icons right active-color">more_vert</i>
+            </span>
+            <p>
+              <a href="#" class="search-watch-movie active-color" id="search-watch-movie center">Ver película</a>
+            </p>
+          </div>
+          <div class="card-reveal search-card-reveal bg-primary text-color" id="search-card-reveal">
+            <span class="card-title grey-text text-darken-4 second-card-title" id="second-card-title">Card Title
+              <i class="material-icons right search-material-icons" id="search-material-icons">close</i>
+            </span>
+            <p class="search-movie-info bg-primary" id="search-movie-info">Here is some more information about this product that is only revealed once clicked on.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- section de resultados de búsqueda -->
+
+  </div>
+
+
+</body>
+<!--Import jQuery before materialize.js-->
+<script type="text/javascript" src="../vendors/jquery/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="../vendors/materialize/js/materialize.min.js"></script>
+<script src="../js/search.js"></script>
+</body>
+
+</html>
