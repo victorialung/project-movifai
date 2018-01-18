@@ -1,0 +1,14 @@
+.overlay {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  font-size: 1.3em;
+  position: absolute;
+  /* width: 50%; */
+  height: 32%;
+}
+
+.movie {
+  height: 10em;
+}

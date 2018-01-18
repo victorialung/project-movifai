@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="../vendors/materialize/css/materialize.min.css">
+    <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="../css/main3.css">
+  </head>
+  <body>
+    <!--Creando estructura header: Navbar(Imput buscador-peril de usuario)-->
+    <header>
+      <!-- Barra de navegacion-->
+      <nav class="row flex-row">
+        <!--Div contenedor del logo Movifai-->
+        <div class="col s2 l2 logo">
+
+        </div>
+        <!--Div contenedor del imput buscador de videos-->
+        <div class="col s9 l9 input-container">
+          <input class="search-input" id="search-input" type="text" name="text" value="">
+        </div>
+        <!--Div contenedor del imagen de perfil de ususario-->
+        <div class="col s1 l1 user-profile" id="user-profile">
+          <a href="#" data-activates="slide-out" class="show-user-perfil" >
+             <img class="img-user" src="../assets/images/user-img.png" alt="user">
+          </a>
+        </div>
+      </nav>
+    </header>
+    <!--Barra lateral de perfil de usuario-->
+    <ul id="slide-out" class="side-nav flex-column  center">
+      <!--imagen de perfil de ususario-->
+      <li><div class="user-view">
+        <img class="img-user-perfil" src="../assets/images/user-img.png" alt="user">
+      </div></li>
+      <!--nombre de ususario-->
+      <a href="#!name"><span class="white-text name center">User Name</span></a>
+      <br>
+      <a href="#" class="button-follow" type="button" name="button">Follow</a>
+      <!--informción de seguidores-->
+      <br>
+      <div class="row">
+        <div class="col s6 l6">
+          <h6>Following</h6>
+          <div class="following">
+            15
+          </div>
+        </div>
+        <div class="col s6 l6">
+          <h6>Followers</h6>
+          <div class="followers">
+            15
+          </div>
+        </div>
+      </div>
+    </ul>
+
+    <!-- Main container  -->
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col s6 l3 movie">
+            <div class="movie">
+              <p class="overlay">La hora sad</p>
+              <img src="../assets/images/peliculas.jpg" alt="fondo" class="responsive-img">
+            </div>
+          </div>
+          <div class="col s6 l3">
+            <img src="../assets/images/peliculas.jpg" alt="fondo" class="responsive-img">
+          </div>
+          <div class="col s6 l3">
+            <img src="../assets/images/peliculas.jpg" alt="fondo" class="responsive-img">
+          </div>
+          <div class="col s6 l3">
+            <img src="../assets/images/peliculas.jpg" alt="fondo" class="responsive-img">
+          </div>
+        </div>
+      </div>
+    </section>
+  <!-- enlazando archivos js -->
+    <script src="../vendors/jquery/jquery-3.2.1.min.js"></script>
+    <script src="../vendors/materialize/js/materialize.min.js"></script>
+    <script type="text/javascript" src="../js/home.js"></script>
+  </body>
+</html>
