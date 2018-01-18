@@ -6,58 +6,83 @@
 }
 
 .vh-100 {
-  height : 100vh;
+  height: 100vh;
 }
 
+
 /* color para tipografía*/
+
 .text-color {
   color: #ffffff;
 }
 
+
 /* color para el logo y los iconos en active*/
-.active-color{
-  color:#ff5252;
+
+.active-color {
+  color: #ff5252;
 }
 
+
 /* color para background version desktop y app */
-.bg-primary{
+
+.bg-primary {
   background-color: #212121;
 }
 
-.bg-secondary{
-  color:#757575;
+.bg-secondary {
+  color: #757575;
 }
+
 
 /* gris de matiz intermedio */
-.secondary-color{
-  color:#757575;
+
+.secondary-color {
+  color: #757575;
 }
 
+
 /* color para los icono en estado normal */
-.divider-color{
-  color:#bdbdbd;
+
+.divider-color {
+  color: #bdbdbd;
 }
+
+
+/* input form search style */
+
+/* .input-field{
+  position: relative;
+}
+.label-icon{
+  position: absolute;
+  left: 20%;
+  bottom:20%;
+} */
 
 /* navbar style */
 
-.p-side-1{
+.p-side-1 {
   padding: 0 1rem;
 }
 
-.search-form{
+.search-form {
   border-radius: 8px;
 }
 
-input #search .search-input{
-  box-shadow : #fff !important;
+input #search .search-input {
+  box-shadow: #fff !important;
 }
 
-.input-field input[type=search]:focus{
+.input-field input[type=search]:focus {
   background-color: #949494;
+  color: #ffffff;
+
 }
+
 
 /* search result style */
 
-.card .card-reveal{
+.card .card-reveal {
   background-color: #212121;
 }
