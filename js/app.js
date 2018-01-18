@@ -56,23 +56,20 @@
 //   apiCall();
 // });
 
-var text = $('#titleFld').val();
-console.log(text);
-function apiCall() {
-  var movieArray = [];
-  // var randomNumber = Math.floor((Math.random() * movieArray.length - 1) + 1);
-  
-  var randomMovie = movieArray[randomNumber];
-  console.log(randomMovie);
-  $.getJSON('https://www.omdbapi.com/?t=' + encodeURI(randomMovie) + '&apikey=3a181f1c').then(function (response) {
-    console.log(response.Poster);
+// TERCER VIDEO https://www.youtube.com/watch?v=YsPqjYGauns > http://www.omdbapi.com/?apikey=3a181f1c&s='+searchtext'
+function apiCall(movie) {
+  // $.getJSON('http://www.omdbapi.com/?apikey=3a181f1c&s=' + movie).then(function(response) {
+  $.getJSON('https://www.omdbapi.com/?t=' + movie + '&apikey=3a181f1c').then(function(response) {
+    console.log(response);
+    var title = response.Title;
     var image = response.Poster;
-    console.log(image);
-    if (image !== 'N/A') {
-      $('#movie').append('<img src="' + image + '">');
+    if (title !== 'N/A') {
+      $('#movie').append('<p>' + title + '</p>');
+      $('#movie').append('<img src=' + image + '>');
     }
   });
 }
-$('#searchBtn').on('click', function () {
-  apiCall();
+$('#searchBtn').on('click', function() {
+  var text = $('#titleFld').val();
+  apiCall(text);
 });
