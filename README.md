@@ -32,7 +32,7 @@ Sirve para darte la mejor experiencia posible en ver películas ,desde la búsqu
    3.En los resultados recavados se encontro que :
 
 | Pregunta  | Pregunta|Pregunta| Pregunta  | Pregunta|
-|--------|--------||--------|--------|
+|--------|--------||--------||--------|--------|
 |   ![](assets/img/pregunta1.png)     |  ![](assets/img/pregunta2.png)       |![](assets/img/pregunta3.png) |   ![](assets/img/pregunta4.png)     |  ![](assets/img/pregunta5.png)       |
 
 
@@ -49,19 +49,27 @@ Sirve para darte la mejor experiencia posible en ver películas ,desde la búsqu
    - Vista Inicio - Esthefany
    - README - Isabel, Victoria y Milagros
     
-4. Lluvia de ideas :
+4. Estudio de competencia(referencia): 
+	[popcorn-time](https://popcorn-time.to/)
+    
+5. Lluvia de ideas :
 	![brainstormin](assets/img/lluvia-ideas.jpg)
 
-5. Creación de arquetipo:
+6. Creación de arquetipo:
 	![arquetipo](assets/img/arquetipo.jpg)
     
-6. Creación de prototipado:
+7. Creación de prototipado:
 
 - Desktop
 	![desktop1](assets/img/prototype-home.png)
     ![desktop2](assets/img/prototype-home-user.png)
     ![desktop3](assets/img/mockup2.jpg)
     ![desktop3](assets/img/mockup1.jpg)
+    
+- App
+	![app1](assets/img/mockup3.jpg)
+    ![app2](assets/img/mockup4.jpg)
+    ![app3](assets/img/mockup6.png)
 
 7.Elección de paleta de colores y tipografia :
 ![palete](assets/img/palete.png)
