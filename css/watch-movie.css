@@ -34,17 +34,20 @@
   color: #757575;
 }
 
+
 /* gris de matiz intermedio */
 
 .secondary-color {
   color: #757575;
 }
 
+
 /* color para los icono en estado normal */
 
 .divider-color {
   color: #bdbdbd;
 }
+
 
 /* navbar style */
 
@@ -71,8 +74,22 @@ input #search .search-input {
   background-color: #212121;
 }
 
-.info-font{
+.info-font {
   font-size: .8rem !important;
   color: whitesmoke;
+}
+
+
+/* footer */
+
+.page-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%
+}
+
+a .icon-home :visited{
+  color: #ff5252;
 }
 

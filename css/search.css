@@ -80,9 +80,29 @@ input #search .search-input {
 
 }
 
-
 /* search result style */
 
 .card .card-reveal {
   background-color: #212121;
 }
+
+/* footer */
+
+.page-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%
+}
+
+
+/* CSS media query within a style sheet  */
+
+@media (min-width: 768px) {
+
+}
+
+@media (min-width: 992px) {
+
+}
+

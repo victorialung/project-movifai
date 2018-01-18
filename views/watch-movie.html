@@ -14,15 +14,15 @@
   <link rel="stylesheet" href="../css/watch-movie.css">
 </head>
 
-<body class="bg-primary text-color" id="body-search">
+<body class="bg-primary text-color vh-100" id="body-search">
   <nav class="bg-primary" id="nav-search">
     <div class="nav-wrapper row " id="nab-wrapper">
       <div class="col s2 m3 l3 left-align icon-logo" id="icon-logo">
-        <a href="#">Logo</a>
+        <a href="#" class="divider-color">Logo</a>
       </div>
       <!-- Inicio selección tematizada -->
       <div class="col s8 m6 l6 center-align icon-theme" id="icon-theme">
-        <p class="icon-theme-text" id="icon-theme-text">Alegra tu dia</p>
+        <p class="icon-theme-text divider-color" id="icon-theme-text">Alegra tu dia</p>
       </div>
       <!--Fin selección tematizada  -->
       <!-- Inicio de menu slide-out -->
@@ -62,13 +62,13 @@
             <a class="waves-effect" href="#!">Third Link With Waves</a>
           </li>
         </ul>
-        <a href="#" data-activates="slide-out" class="button-collapse show-on-large">User</a>
+        <a href="#" data-activates="slide-out" class="button-collapse show-on-large divider-color">
+          <i class="material-icons">account_circle</i>
+        </a>
       </div>
       <!--Fin de menu slide-out  -->
     </div>
   </nav>
-  <br>
-  <br>
   <!-- sección de ficha tecnica -->
   <div class="container movie-tech-container" id="movie-tech-container">
     <div class="row">
@@ -103,20 +103,25 @@
   </div>
   <br>
   <!-- section footer desktop/mobile -->
-  <footer class="bg-primary" id="nav-search">
-    <div class="nav-wrapper row " id="nab-wrapper">
-      <div class="col s2  left-align icon-logo" id="icon-logo">
-        <a href="#">Logo</a>
+  <footer class="page-footer hide-on-med-and-up bg-primary" id="nav-search">
+    <div class=" row " id="nab-wrapper">
+      <div class="col s2  left-align icon-home" id="icon-home">
+        <a href="home.html" class="icon-home">
+          <i class="material-icons divider-color">home</i>
+        </a>
       </div>
-      <div class="col s8 m6 l6 center-align icon-theme" id="icon-theme">
-        <a href="#">Logo</a>
+      <div class="col s8  center-align icon-search" id="icon-search">
+        <a href="search.html" class="icon-search">
+          <i class="material-icons divider-color">search</i>
+        </a>
       </div>
-      <div class="col s2  right-align icon-user" id="icon-user">
-        <a href="#">Logo</a>
+      <div class="col s2  right-align icon-friends" id="icon-friends">
+        <a href="#" class="icon-friends">
+          <i class="material-icons divider-color">people</i>
+        </a>
       </div>
     </div>
   </footer>
-
 </body>
 <!--Import jQuery before materialize.js-->
 <script type="text/javascript" src="../vendors/jquery/jquery-3.2.1.min.js"></script>
