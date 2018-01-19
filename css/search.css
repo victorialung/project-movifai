@@ -1,14 +1,10 @@
 .movies img, #movie img{
     width: 100%;
-    height: 18em;
+    height: 21em;
 }
 
 .movies .well{
-    height: 27em;
-}
-
-.movies, .well, .img{
-    height: 15em;
+    height: 30em;
 }
 
 .text-tittle{

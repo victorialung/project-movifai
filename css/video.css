@@ -1,37 +1,72 @@
-@import url(https://fonts.googleapis.com/css?family=Varela+Round);
-body {
-    background: hsla(0, 0%, 0%, .9);
-}
+/* Ubicacion del icono corazón */
 
-h1 {
-    color: hsla(0, 0%, 0%, .9);
-    font: normal 140px Varela Round, sans-serif;
-    height: 140px;
-    left: 0;
-    letter-spacing: 5px;
-    margin: -80px 0 0 0;
+.pseudovideo{
+    position: relative;
+}
+.video-container a{
     position: absolute;
-    text-align: center;
-    text-transform: uppercase;
     top: 50%;
-    width: 100%;
-    animation: move linear 2000ms infinite;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
-@keyframes move {
-    0% {
-        text-shadow: 4px -4px 0 hsla(0, 100%, 50%, 1), 3px -3px 0 hsla(0, 100%, 50%, 1), 2px -2px 0 hsla(0, 100%, 50%, 1), 1px -1px 0 hsla(0, 100%, 50%, 1), -4px 4px 0 hsla(180, 100%, 50%, 1), -3px 3px 0 hsla(180, 100%, 50%, 1), -2px 2px 0 hsla(180, 100%, 50%, 1), -1px 1px 0 hsla(180, 100%, 50%, 1);
-    }
-    25% {
-        text-shadow: -4px -4px 0 hsla(180, 100%, 50%, 1), -3px -3px 0 hsla(180, 100%, 50%, 1), -2px -2px 0 hsla(180, 100%, 50%, 1), -1px -1px 0 hsla(180, 100%, 50%, 1), 4px 4px 0 hsla(0, 100%, 50%, 1), 3px 3px 0 hsla(0, 100%, 50%, 1), 2px 2px 0 hsla(0, 100%, 50%, 1), 1px 1px 0 hsla(0, 100%, 50%, 1);
-    }
-    50% {
-        text-shadow: -4px 4px 0 hsla(0, 100%, 50%, 1), -3px 3px 0 hsla(0, 100%, 50%, 1), -2px 2px 0 hsla(0, 100%, 50%, 1), -1px 1px 0 hsla(0, 100%, 50%, 1), 4px -4px 0 hsla(180, 100%, 50%, 1), 3px -3px 0 hsla(180, 100%, 50%, 1), 2px -2px 0 hsla(180, 100%, 50%, 1), 1px -1px 0 hsla(180, 100%, 50%, 1);
-    }
-    75% {
-        text-shadow: 4px 4px 0 hsla(180, 100%, 50%, 1), 3px 3px 0 hsla(180, 100%, 50%, 1), 2px 2px 0 hsla(180, 100%, 50%, 1), 1px 1px 0 hsla(180, 100%, 50%, 1), -4px -4px 0 hsla(0, 100%, 50%, 1), -3px -3px 0 hsla(0, 100%, 50%, 1), -2px -2px 0 hsla(0, 100%, 50%, 1), -1px -1px 0 hsla(0, 100%, 50%, 1);
-    }
-    100% {
-        text-shadow: 4px -4px 0 hsla(0, 100%, 50%, 1), 3px -3px 0 hsla(0, 100%, 50%, 1), 2px -2px 0 hsla(0, 100%, 50%, 1), 1px -1px 0 hsla(0, 100%, 50%, 1), -4px 4px 0 hsla(180, 100%, 50%, 1), -3px 3px 0 hsla(180, 100%, 50%, 1), -2px 2px 0 hsla(180, 100%, 50%, 1), -1px 1px 0 hsla(180, 100%, 50%, 1);
-    }
+/* color para tipografía*/
+
+.text-color {
+    color: #ffffff;
+}
+
+
+/* color para el logo y los iconos en active*/
+
+.active-color {
+    background: #ff5252 !important;
+}
+
+
+/* color para background version desktop y app */
+
+.bg-primary {
+    background-color: #212121;
+}
+
+.bg-secondary {
+    color: #757575;
+}
+
+
+/* gris de matiz intermedio */
+
+.secondary-color {
+    color: #757575;
+}
+
+
+/* color para los icono en estado normal */
+
+.divider-color {
+    color: #bdbdbd;
+}
+
+.card .card-reveal {
+    background-color: #212121;
+}
+
+.info-font {
+    font-size: .8rem !important;
+    color: whitesmoke;
+}
+
+
+/* footer */
+
+.page-footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%
+}
+
+a .icon-home :active {
+    color: #ff5252;
 }
