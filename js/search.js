@@ -86,7 +86,7 @@ function getMovie() {
                                 <hr>
                                 <br><br>
                                 <div class="buttons-movie center">
-                                <a href="http://imdb.com/title/${movie.imdbID}" target="_blank" class="btn btn-primary active-color">View IMDB</a>
+                                <a href="https://imdb.com/title/${movie.imdbID}" target="_blank" class="btn btn-primary active-color">View IMDB</a>
                                 <a href="index.html" class="btn btn-default center active-color">Go Back To Search</a>
                             </div>
                             </div>
