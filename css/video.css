@@ -1,0 +1,72 @@
+/* Ubicacion del icono corazón */
+
+.pseudovideo{
+    position: relative;
+}
+.video-container a{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* color para tipografía*/
+
+.text-color {
+    color: #ffffff;
+}
+
+
+/* color para el logo y los iconos en active*/
+
+.active-color {
+    background: #ff5252 !important;
+}
+
+
+/* color para background version desktop y app */
+
+.bg-primary {
+    background-color: #212121;
+}
+
+.bg-secondary {
+    color: #757575;
+}
+
+
+/* gris de matiz intermedio */
+
+.secondary-color {
+    color: #757575;
+}
+
+
+/* color para los icono en estado normal */
+
+.divider-color {
+    color: #bdbdbd;
+}
+
+.card .card-reveal {
+    background-color: #212121;
+}
+
+.info-font {
+    font-size: .8rem !important;
+    color: whitesmoke;
+}
+
+
+/* footer */
+
+.page-footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%
+}
+
+a .icon-home :active {
+    color: #ff5252;
+}
