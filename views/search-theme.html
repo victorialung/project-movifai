@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,56 +12,52 @@
   <link type="text/css" rel="stylesheet" href="../vendors/materialize/css/materialize.min.css" media="screen,projection" />
   <link rel="stylesheet" href="../css/search-theme.css">
 </head>
-
 <body class="bg-primary text-color" id="body-search">
   <nav class="bg-primary" id="nav-search">
     <div class="nav-wrapper row " id="nab-wrapper">
-      <div class="col s3 m3 l3 left-align icon-logo" id="icon-logo">
+      <div class="col s4 m4 l4 left-align icon-logo" id="icon-logo">
         <a href="#">Logo</a>
       </div>
       <!-- Inicio selección tematizada -->
-      <div class="col s6 m4 l4 center-align  icon-theme" id="icon-theme">
+      <div class="col s4 m4 l4 center-align  icon-theme" id="icon-theme">
         <p class="icon-theme-text" id="icon-theme-text">Alegra tu dia</p>
       </div>
       <!--Fin selección tematizada  -->
       <!-- Inicio de menu slide-out -->
-      <div class="col s3 m3 l3 right-align icon-user" id="icon-user">
-        <ul id="slide-out" class="side-nav search-side-nav" id="search-side-nav">
-          <li>
-            <div class="user-view search-user-view bg-secondary" id="search-user-view">
-              <div class="background bg-secondary">
-                <a href="#">Logo</a>
-                <!-- <img class="circle user-avatar" id="user-avatar" src="http://voice4thought.org/wp-content/uploads/2016/08/default1.jpg"> -->
-              </div>
-              <a href="#!user" class="center-align">
-                <img class="circle user-avatar" id="user-avatar" src="http://voice4thought.org/wp-content/uploads/2016/08/default1.jpg">
-              </a>
+      <div class="col s4 m4 l4 right-align icon-user center" id="icon-user">
+        <ul id="slide-out" class="side-nav search-side-nav " id="search-side-nav">
+          <div class="col s12 user-icon-div">
+            <a href="#!user" class="center-align user-icon">
+              <img class="circle user-avatar" id="user-avatar" src="http://voice4thought.org/wp-content/uploads/2016/08/default1.jpg">
+            </a>
+          </div>
+          <div class="info-user">
+            <div class="user-view search-user-view bg-secondary center" id="search-user-view">
               <a href="#!name">
-                <span class="white-text name">John Doe</span>
+                <span class="white-text name center">User Name</span>
               </a>
-              <a href="#!email">
-                <span class="white-text email">jdandturk@gmail.com</span>
-              </a>
+              <a href="#" class="btn button-follow " type="button" name="button">Find friends</a>
             </div>
-          </li>
-          <li>
-            <a href="#!">
-              <i class="material-icons">cloud</i>First Link With Icon</a>
-          </li>
-          <li>
-            <a href="#!">Second Link</a>
-          </li>
-          <li>
-            <div class="divider"></div>
-          </li>
-          <li>
-            <a class="subheader">Subheader</a>
-          </li>
-          <li>
-            <a class="waves-effect" href="#!">Third Link With Waves</a>
-          </li>
+          </div>
+          <div class="row center fllw">
+            <div class="col s6 l6">
+              <h6>Following</h6>
+              <div class="following ">
+                15
+              </div>
+            </div>
+            <div class="col s6 l6">
+              <h6>Followers</h6>
+              <div class="followers">
+                15
+              </div>
+            </div>
+          </div>
+          <!--amigos-->
+          <div class="row friend-container" id="friend-container">
+          </div>
         </ul>
-        <a href="#" data-activates="slide-out" class="button-collapse show-on-large">User</a>
+        <a href="#" data-activates="slide-out" class="button-collapse show-on-large active-color right">User</a>
       </div>
       <!--Fin de menu slide-out  -->
     </div>
@@ -100,44 +95,53 @@
           </div>
           <div class="card-reveal search-card-reveal bg-primary text-color" id="search-card-reveal">
             <span class="card-title grey-text text-darken-4 second-card-title" id="second-card-title">Card Title
-              <i class="material-icons right search-material-icons divider-color" id="search-material-icons">close</i>
+              <i class="material-icons right search-material-icons" id="search-material-icons">close</i>
             </span>
-            <p class="search-movie-info bg-primary info-font" id="search-movie-info">Here is some more information about this product that is only revealed once clicked on.</p>
-            <br>
-            <p>
-              <a href="#" class="search-watch-movie active-color" id="search-watch-movie center"><strong>Ver película</strong></a>
-            </p>
+            <p class="search-movie-info bg-primary" id="search-movie-info">Here is some more information about this product that is only revealed once clicked on.</p>
           </div>
         </div>
       </div>
     </div>
-  <br>
+    <!-- section de resultados de búsqueda -->
+  </div>
   <!-- section footer desktop/mobile -->
   <footer class="page-footer hide-on-med-and-up bg-primary" id="nav-search">
-    <div class=" row " id="nab-wrapper">
-      <div class="col s2  left-align icon-home" id="icon-home">
-        <a href="home.html" class="icon-home">
-          <i class="material-icons divider-color">home</i>
-        </a>
-      </div>
-      <div class="col s8  center-align icon-search" id="icon-search">
-        <a href="search.html" class="icon-search">
-          <i class="material-icons divider-color">search</i>
-        </a>
-      </div>
-      <div class="col s2  right-align icon-friends" id="icon-friends">
-        <a href="#" class="icon-friends">
-          <i class="material-icons divider-color">people</i>
-        </a>
-      </div>
-    </div>
-  </footer>
-
+        <div class=" row " id="nab-wrapper">
+          <div class="col s2  left-align icon-home" id="icon-home">
+            <a href="home.html" class="icon-home">
+              <i class="material-icons divider-color">home</i>
+            </a>
+          </div>
+          <div class="col s8  center-align icon-search" id="icon-search">
+            <a href="search.html" class="icon-search">
+              <i class="material-icons divider-color">search</i>
+            </a>
+          </div>
+          <div class="col s2  right-align icon-friends" id="icon-friends">
+            <a href="#" class="icon-friends">
+              <i class="material-icons divider-color">people</i>
+            </a>
+          </div>
+        </div>
+      </footer>
+      <!-- Footer version desktop -->
+      <footer class="page-footer footer-desktop hide-on-small-only" id="nav-search">
+        <div class=" row " id="nab-wrapper">
+          <hr>
+          <div class="flex-row padding-footer">
+            <div class="col m6 l6 text-left">
+              © 2018 Movifai Web-App. All Rights Reserved
+            </div>
+            <div class="col m6 l6 text-right">
+              Movify Girls Team Group.
+            </div>
+          </div>
+        </div>
+      </footer>
 </body>
 <!--Import jQuery before materialize.js-->
 <script type="text/javascript" src="../vendors/jquery/jquery-3.2.1.min.js"></script>
 <script type="text/javascript" src="../vendors/materialize/js/materialize.min.js"></script>
 <script src="../js/search-theme.js"></script>
 </body>
-
 </html>
