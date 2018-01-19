@@ -35,6 +35,7 @@ var provider = new firebase.auth.GoogleAuthProvider();
       var name = window.localStorage.getItem('name');
       window.localStorage.setItem('foto', result.user.photoURL);
       var photo = window.localStorage.getItem('foto');
+      window.location.href = 'home.html';
     });
   });
 });
