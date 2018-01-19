@@ -49,17 +49,6 @@
 }
 
 
-/* input form search style */
-
-/* .input-field{
-  position: relative;
-}
-.label-icon{
-  position: absolute;
-  left: 20%;
-  bottom:20%;
-} */
-
 /* navbar style */
 
 .p-side-1 {
@@ -77,37 +66,30 @@ input #search .search-input {
 .input-field input[type=search]:focus {
   background-color: #949494;
 }
-/* slide-out style */
-.side-nav{
-  background-color: rgba(44, 48, 56, 0.7);
+
+
+/* search result style */
+
+.card .card-reveal {
+  background-color: #212121;
 }
-.user-icon-div{
-  margin-top: 50px;
+
+.info-font {
+  font-size: .8rem !important;
+  color: whitesmoke;
 }
-.user-avatar{
-  width: 100px;
+
+
+/* footer */
+
+.page-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%
 }
-.info-user{
-  margin-top: 30px;
-  padding: 10px;
+
+a .icon-home :visited{
+  color: #ff5252;
 }
-.fllw{
-  margin-top: -10px;
-}
-.button-follow{
-  padding: 5px !important;
-  border-radius: 25px !important;
-  height: 40px !important;
-  border-radius: 5px;
-  background: #e53935;
-  background: -webkit-linear-gradient(to right, #e35d5b, #e53935);
-  background: linear-gradient(to right, #e35d5b, #e53935);
-  color: #ffff;
-  font-size: 10px;
-}
-.button-follow:active{
-  background: #FF5252;
-}
-.following, .followers {
-line-height: 2;
-}
+
