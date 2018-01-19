@@ -1,23 +1,40 @@
-//Función para
-$(document).ready(function () {
-    $('input.autocomplete').autocomplete({
-      data: {
-        "Apple": null,
-        "Microsoft": null,
-        "Google": null,
-        "Gargle": null
-      }
+$(document).ready(() => {
+    $('#searchForm').on('submit', (e) => {
+        let searchText = $('#searchText').val();
+        getMovies(searchText);
+        e.preventDefault();
     });
-  });
-  // Función para nav-side
-  // Initialize collapse button
-  $(".button-collapse").sideNav();
-  // Initialize collapsible (uncomment the line below if you use the dropdown variation)
-  //$('.collapsible').collapsible();
-  $('.button-collapse').sideNav({
-    menuWidth: 300, // Default is 300
-    edge: 'right', // Choose the horizontal origin
-    closeOnClick: true, // Closes side-nav on <a> clicks, useful for Angular/Meteor
-    draggable: true,
-  }
-  );
+});
+
+function getMovies (searchText) {
+    axios.get('http://www.omdbapi.com/?apikey=924804a&s='+searchText)
+        .then((response) => {
+            console.log(response);
+            let movies = response.data.Search;
+            let output = '';
+            $.each(movies, (index, movie) => {
+                output += `
+                <div class="well col s6 m3">
+                    <div class = "center-align">
+                        <img src ="${movie.Poster}"/>
+                        <div class="text-tittle">
+                            <h6 class="white-text">${movie.Title}</h6>
+                        </div>
+                        <div class="details">
+                            <a onclick ="movieSelected('${movie.imdbID}')" class = "waves-effect waves-light btn" href="#">Movie Details</a>
+                        </div>
+                    </div>
+                </div>
+                `;
+            });
+
+            $('#movies').html(output);
+        })
+        .catch((err) => {
+            console.log(err);
+        });
+    }
+
+    function movieSelected(id){
+
+    }
