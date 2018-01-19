@@ -26,41 +26,35 @@
       </div>
       <!--Fin selección tematizada  -->
       <!-- Inicio de menu slide-out -->
-      <div class="col s4 m4 l4 right-align icon-user" id="icon-user">
-        <ul id="slide-out" class="side-nav search-side-nav" id="search-side-nav">
-          <li>
-            <div class="user-view search-user-view bg-secondary" id="search-user-view">
-              <div class="background bg-secondary">
-                  <a href="#">Logo</a>
-                <!-- <img class="circle user-avatar" id="user-avatar" src="http://voice4thought.org/wp-content/uploads/2016/08/default1.jpg"> -->
-              </div>
-              <a href="#!user" class="center-align">
-                <img class="circle user-avatar" id="user-avatar" src="http://voice4thought.org/wp-content/uploads/2016/08/default1.jpg">
-              </a>
+      <div class="col s4 m4 l4 right-align icon-user center" id="icon-user">
+        <ul id="slide-out" class="side-nav search-side-nav " id="search-side-nav">
+          <div class="border">
+            <a href="#!user" class="center-align user-icon">
+              <img class="circle user-avatar" id="user-avatar" src="http://voice4thought.org/wp-content/uploads/2016/08/default1.jpg">
+            </a>
+          </div>
+          <li class="info-user">
+            <div class="user-view search-user-view bg-secondary center" id="search-user-view">
               <a href="#!name">
-                <span class="white-text name">John Doe</span>
+                <span class="white-text name center">User Name</span>
               </a>
-              <a href="#!email">
-                <span class="white-text email">jdandturk@gmail.com</span>
-              </a>
+              <a href="#" class="btn button-follow " type="button" name="button">Follow</a>
             </div>
           </li>
-          <li>
-            <a href="#!">
-              <i class="material-icons">cloud</i>First Link With Icon</a>
-          </li>
-          <li>
-            <a href="#!">Second Link</a>
-          </li>
-          <li>
-            <div class="divider"></div>
-          </li>
-          <li>
-            <a class="subheader">Subheader</a>
-          </li>
-          <li>
-            <a class="waves-effect" href="#!">Third Link With Waves</a>
-          </li>
+          <div class="row center">
+            <div class="col s6 l6">
+              <h6>Following</h6>
+              <div class="following ">
+                15
+              </div>
+            </div>
+            <div class="col s6 l6">
+              <h6>Followers</h6>
+              <div class="followers">
+                15
+              </div>
+            </div>
+          </div>
         </ul>
         <a href="#" data-activates="slide-out" class="button-collapse show-on-large">User</a>
       </div>

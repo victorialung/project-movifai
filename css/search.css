@@ -55,3 +55,35 @@ input #search .search-input{
 .input-field input[type=search]:focus{
   background-color: #949494;
 }
+/* slide-out style */
+.side-nav{
+  background-color: rgba(44, 48, 56, 0.7);
+}
+.user-avatar{
+  width: 100px;
+  margin-top: 15px;
+}
+.border{
+  width: 130px;
+  height: 130px;
+  border: 1px solid #FF5252;
+  border-radius: 130px;
+  margin-top: 40px;
+}
+.info-user{
+  padding: 10px;
+}
+.button-follow{
+  width: 55px;
+  border: 1px solid #FF5252;
+  border-radius: 5px;
+  background: none;
+  color: #ffff;
+  font-size: 10px;
+}
+.button-follow:active{
+  background: #FF5252;
+}
+.following, .followers {
+line-height: 2;
+}
