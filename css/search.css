@@ -95,6 +95,10 @@ input #search .search-input {
   width: 100%
 }
 
+.info-font {
+  font-size: .8rem !important;
+  color: whitesmoke;
+}
 
 /* CSS media query within a style sheet  */
 
