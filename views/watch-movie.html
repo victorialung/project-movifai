@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>movifai</title>
+  <link rel="shortcut icon" href="assets/img/favicon.png" />
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700" rel="stylesheet">
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Import materialize.css-->
+  <link type="text/css" rel="stylesheet" href="../vendors/materialize/css/materialize.min.css" media="screen,projection" />
+  <link rel="stylesheet" href="../css/watch-movie.css">
+</head>
+
+<body class="bg-primary text-color vh-100" id="body-search">
+  <nav class="bg-primary" id="nav-search">
+    <div class="nav-wrapper row " id="nab-wrapper">
+      <div class="col s2 m3 l3 left-align icon-logo" id="icon-logo">
+        <a href="#" class="divider-color">Logo</a>
+      </div>
+      <!-- Inicio selección tematizada -->
+      <div class="col s8 m6 l6 center-align icon-theme" id="icon-theme">
+        <p class="icon-theme-text divider-color" id="icon-theme-text">Alegra tu dia</p>
+      </div>
+      <!--Fin selección tematizada  -->
+      <!-- Inicio de menu slide-out -->
+      <div class="col s2 m3 l3 right-align icon-user" id="icon-user">
+        <ul id="slide-out" class="side-nav search-side-nav" id="search-side-nav">
+          <li>
+            <div class="user-view search-user-view bg-secondary" id="search-user-view">
+              <div class="background bg-secondary">
+                <a href="#">Logo</a>
+                <!-- <img class="circle user-avatar" id="user-avatar" src="http://voice4thought.org/wp-content/uploads/2016/08/default1.jpg"> -->
+              </div>
+              <a href="#!user" class="center-align">
+                <img class="circle user-avatar" id="user-avatar" src="http://voice4thought.org/wp-content/uploads/2016/08/default1.jpg">
+              </a>
+              <a href="#!name">
+                <span class="white-text name">John Doe</span>
+              </a>
+              <a href="#!email">
+                <span class="white-text email">jdandturk@gmail.com</span>
+              </a>
+            </div>
+          </li>
+          <li>
+            <a href="#!">
+              <i class="material-icons">cloud</i>First Link With Icon</a>
+          </li>
+          <li>
+            <a href="#!">Second Link</a>
+          </li>
+          <li>
+            <div class="divider"></div>
+          </li>
+          <li>
+            <a class="subheader">Subheader</a>
+          </li>
+          <li>
+            <a class="waves-effect" href="#!">Third Link With Waves</a>
+          </li>
+        </ul>
+        <a href="#" data-activates="slide-out" class="button-collapse show-on-large divider-color">
+          <i class="material-icons">account_circle</i>
+        </a>
+      </div>
+      <!--Fin de menu slide-out  -->
+    </div>
+  </nav>
+  <!-- sección de ficha tecnica -->
+  <div class="container movie-tech-container" id="movie-tech-container">
+    <div class="row">
+      <div class="col s12 m12 ">
+        <div class=" movie-tech-info" id="movie-tech-info">
+          <p class="sinopsis" id="sinopsis">
+            <strong>Sinopsis</strong>:
+            <span class="sinopsis-info info-font" id="sinopsis-info">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit temporibus porro accusantium eum, est aliquam
+              aliquid libero quaerat, unde molestiae quidem modi. Assumenda, ex molestiae iste minus hic maiores veritatis.</span>
+          </p>
+        </div>
+        <br>
+        <div class="row">
+          <div class="col s5 m6 ">
+            <div class="movie-tech-info">
+              <p class="director" id="director">
+                <strong>Director</strong>:
+                <span class="director-info info-font" id="director-info">Quentin Tarantino </span>
+              </p>
+            </div>
+          </div>
+          <div class="col s7 m6">
+            <p class="reparto" id="reparto">
+              <strong>Reparto</strong>:
+              <span class="reparto-info info-font" id="reparto-info">persona1,persona2 ,
+                <br>persona3,persona4</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <!-- section footer desktop/mobile -->
+  <footer class="page-footer hide-on-med-and-up bg-primary" id="nav-search">
+    <div class=" row " id="nab-wrapper">
+      <div class="col s2  left-align icon-home" id="icon-home">
+        <a href="home.html" class="icon-home">
+          <i class="material-icons divider-color">home</i>
+        </a>
+      </div>
+      <div class="col s8  center-align icon-search" id="icon-search">
+        <a href="search.html" class="icon-search">
+          <i class="material-icons divider-color">search</i>
+        </a>
+      </div>
+      <div class="col s2  right-align icon-friends" id="icon-friends">
+        <a href="#" class="icon-friends">
+          <i class="material-icons divider-color">people</i>
+        </a>
+      </div>
+    </div>
+  </footer>
+</body>
+<!--Import jQuery before materialize.js-->
+<script type="text/javascript" src="../vendors/jquery/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="../vendors/materialize/js/materialize.min.js"></script>
+<script src="../js/watch-movie.js"></script>
+</body>
+
+</html>

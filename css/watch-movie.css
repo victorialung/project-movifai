@@ -49,19 +49,6 @@
 }
 
 
-/* input form search style */
-
-
-/* .input-field{
-  position: relative;
-}
-.label-icon{
-  position: absolute;
-  left: 20%;
-  bottom:20%;
-} */
-
-
 /* navbar style */
 
 .p-side-1 {
@@ -78,7 +65,6 @@ input #search .search-input {
 
 .input-field input[type=search]:focus {
   background-color: #949494;
-  color: #ffffff;
 }
 
 
@@ -88,45 +74,13 @@ input #search .search-input {
   background-color: #212121;
 }
 
-
-/* footer */
-
-.page-footer {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%
-}
-
 .info-font {
   font-size: .8rem !important;
   color: whitesmoke;
 }
 
-.movies img,
-#movie img {
-  width: 100%;
-  height: 21em;
-}
-
-.movies .well {
-  height: 30em;
-}
-
-.text-tittle {
-  height: 4em;
-}
-
-.details {
-  height: 6em;
-}
-
 
 /* footer */
-
-.bg-primary {
-  background-color: #212121;
-}
 
 .page-footer {
   position: fixed;
@@ -135,38 +89,7 @@ input #search .search-input {
   width: 100%
 }
 
-a .icon-home :visited {
+a .icon-home :visited{
   color: #ff5252;
 }
 
-
-/* color para los iconos en estado normal */
-
-.divider-color {
-  color: #bdbdbd;
-}
-
-.text-left {
-  text-align: left;
-}
-
-.text-right {
-  text-align: right;
-}
-
-.padding-footer {
-  padding: 0 10px;
-}
-
-.footer-desktop {
-  padding: 0;
-  z-index: 1001;
-  background-color: #212121;
-}
-
-
-/* CSS media query within a style sheet  */
-
-@media (min-width: 768px) {}
-
-@media (min-width: 992px) {}

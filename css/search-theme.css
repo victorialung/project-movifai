@@ -1,125 +1,176 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
-  }
-  .vh-100 {
-    height : 100vh;
-  }
-  /* color para tipografía*/
-  .text-color {
-    color: #ffffff;
-  }
-  /* color para el logo y los iconos en active*/
-  .active-color{
-    color:#ff5252;
-  }
-  /* color para background version desktop y app */
-  .bg-primary{
-    background-color: #212121;
-  }
-  .bg-secondary{
-    color:#757575;
-  }
-  /* gris de matiz intermedio */
-  .secondary-color{
-    color:#757575;
-  }
-  /* color para los icono en estado normal */
-  .divider-color{
-    color:#bdbdbd;
-  }
-  /* navbar style */
-  .p-side-1{
-    padding: 0 1rem;
-  }
-  .search-form{
-    border-radius: 8px;
-  }
-  input #search .search-input{
-    box-shadow : #fff !important;
-  }
-  .input-field input[type=search]:focus{
-    background-color: #949494;
-  }
-  /* slide-out style */
-  .side-nav{
-    background-color: rgba(41, 40, 42, 0.9);
-  }
-  .user-icon-div{
-    margin-top: 50px;
-  }
-  .user-avatar{
-    width: 100px;
-  }
-  .info-user{
-    margin-top: 30px;
-    padding: 10px;
-  }
-  .fllw{
-    margin-top: -10px;
-  }
-  .button-follow{
-    padding: 5px !important;
-    border-radius: 25px !important;
-    height: 40px !important;
-    border-radius: 5px;
-    background: #e53935;
-    background: -webkit-linear-gradient(to right, #e35d5b, #e53935);
-    background: linear-gradient(to right, #e35d5b, #e53935);
-    color: #ffff;
-    font-size: 10px;
-  }
-  .button-follow:active{
-    background: #FF5252;
-  }
-  .following, .followers {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.vh-100 {
+  height: 100vh;
+}
+
+
+/* color para tipografía*/
+
+.text-color {
+  color: #ffffff;
+}
+
+
+/* color para el logo y los iconos en active*/
+
+.active-color {
+  color: #ff5252;
+}
+
+
+/* color para background version desktop y app */
+
+.bg-primary {
+  background-color: #212121;
+}
+
+.bg-secondary {
+  color: #757575;
+}
+
+
+/* gris de matiz intermedio */
+
+.secondary-color {
+  color: #757575;
+}
+
+
+/* color para los icono en estado normal */
+
+.divider-color {
+  color: #bdbdbd;
+}
+
+
+/* navbar style */
+
+.p-side-1 {
+  padding: 0 1rem;
+}
+
+.search-form {
+  border-radius: 8px;
+}
+
+input #search .search-input {
+  box-shadow: #fff !important;
+}
+
+.input-field input[type=search]:focus {
+  background-color: #949494;
+}
+
+
+/* slide-out style */
+
+.side-nav {
+  background-color: rgba(41, 40, 42, 0.9);
+}
+
+.user-icon-div {
+  margin-top: 50px;
+}
+
+.user-avatar {
+  width: 100px;
+}
+
+.info-user {
+  margin-top: 30px;
+  padding: 10px;
+}
+
+.fllw {
+  margin-top: -10px;
+}
+
+.button-follow {
+  padding: 5px !important;
+  border-radius: 25px !important;
+  height: 40px !important;
+  border-radius: 5px;
+  background: #e53935;
+  background: -webkit-linear-gradient(to right, #e35d5b, #e53935);
+  background: linear-gradient(to right, #e35d5b, #e53935);
+  color: #ffff;
+  font-size: 10px;
+}
+
+.button-follow:active {
+  background: #FF5252;
+}
+
+.following,
+.followers {
   line-height: 2;
-  }
-  /* footer */
- 
- .bg-primary {
-    background-color: #212121;
-  }
-  .page-footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%
-  }
-  a .icon-home :visited{
-    color: #ff5252;
-  }
-  /* color para los iconos en estado normal */
-  
-  .divider-color {
-    color: #bdbdbd;
-  }
-  .text-left {
-    text-align: left;
-  }
-  .text-right {
-    text-align: right;
-  }
-  .padding-footer {
-    padding: 0 10px;
-  }
-  .footer-desktop {
-    padding:0;
-    z-index: 1001;
-    background-color: #212121;
-  }
-  .themed-img {
-    width: 300px !important;
-    height: 250px !important;
-  }
-  .flex-row{
-    display: flex;
-    justify-content:space-between;
-    align-items: center;
-  }
-  .logo {
-    width: 150px;
-    height: 100px;
-  }
+}
+
+
+/* footer */
+
+.bg-primary {
+  background-color: #212121;
+}
+
+.page-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%
+}
+
+a .icon-home :visited {
+  color: #ff5252;
+}
+
+
+/* color para los iconos en estado normal */
+
+.divider-color {
+  color: #bdbdbd;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.padding-footer {
+  padding: 0 10px;
+}
+
+.footer-desktop {
+  padding: 0;
+  z-index: 1001;
+  background-color: #212121;
+}
+
+.themed-img {
+  width: 300px !important;
+  height: 250px !important;
+}
+
+.flex-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 150px;
+  height: 100px;
+}
+
+.search-card-reveal{
+  background-color: #212121 !important;
+}

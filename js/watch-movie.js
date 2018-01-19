@@ -1,15 +1,3 @@
-//Función para
-$(document).ready(function () {
-  $('input.autocomplete').autocomplete({
-    data: {
-      "Apple": null,
-      "Microsoft": null,
-      "Google": null,
-      "Gargle": null
-    }
-  });
-});
-
 // Función para nav-side
 // Initialize collapse button
 $(".button-collapse").sideNav();
