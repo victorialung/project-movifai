@@ -14,81 +14,81 @@
 
 <body>
   <!--Creando estructura header: Navbar(Imput buscador-peril de usuario)-->
-  
-    <!-- Barra de navegacion-->
-    <!-- <nav class="flex-row"> -->
-      <!--Div contenedor del logo Movifai-->
-      <!-- <div class="col s2 l2 logo"> -->
 
-      <!-- </div> -->
-      <!--Div contenedor del input buscador de videos-->
-      <!-- <div class=" input-container">
+  <!-- Barra de navegacion-->
+  <!-- <nav class="flex-row"> -->
+  <!--Div contenedor del logo Movifai-->
+  <!-- <div class="col s2 l2 logo"> -->
+
+  <!-- </div> -->
+  <!--Div contenedor del input buscador de videos-->
+  <!-- <div class=" input-container">
         <input class="search-input" id="search-input" type="text" name="text" value="">
       </div> -->
-      <!--Div contenedor de la imágen de perfil de ususario-->
-      <!-- <div class="col s1 l1 user-profile" id="user-profile">
+  <!--Div contenedor de la imágen de perfil de ususario-->
+  <!-- <div class="col s1 l1 user-profile" id="user-profile">
         <a href="#" data-activates="slide-out" class="show-user-perfil">
           <img class="img-user" src="../assets/images/user-img.png" alt="user">
         </a>
       </div>
     </nav> -->
-    <nav class="bg-primary" id="nav-search">
-        <div class="nav-wrapper row " id="nab-wrapper">
-          <div class="col s4 m4 l4 left-align icon-logo" id="icon-logo">
-            <a href="#">Logo</a>
+  <nav class="bg-primary" id="nav-search">
+    <div class="nav-wrapper row " id="nab-wrapper">
+      <div class="col s4 m4 l4 left-align icon-logo" id="icon-logo">
+        <a href="#">Logo</a>
+      </div>
+      <!-- Inicio selección tematizada -->
+      <div class="col s4 m4 l4 center-align  icon-theme" id="icon-theme">
+        <form class="search-form" id="search-form">
+          <div class="input-field circle flex-row" id="input-field">
+            <i class="material-icons">search</i>
+            <input id="search" class="search-input" type="search" required>
           </div>
-          <!-- Inicio selección tematizada -->
-          <div class="col s4 m4 l4 center-align  icon-theme" id="icon-theme">
-              <form class="search-form" id="search-form">
-                  <div class="input-field circle flex-row" id="input-field"> 
-                    <i class="material-icons">search</i>              
-                    <input id="search" class="search-input" type="search" required>
-                  </div>
-                </form>
+        </form>
+      </div>
+      <!--Fin selección tematizada  -->
+      <!-- Inicio de menu slide-out -->
+      <div class="col s4 m4 l4 right-align icon-user center" id="icon-user">
+        <ul id="slide-out" class="side-nav search-side-nav " id="search-side-nav">
+          <div class="col s12 user-icon-div">
+            <a href="#!user" class="center-align user-icon">
+              <img class="circle user-avatar" id="user-avatar" src="http://voice4thought.org/wp-content/uploads/2016/08/default1.jpg">
+            </a>
           </div>
-          <!--Fin selección tematizada  -->
-          <!-- Inicio de menu slide-out -->
-          <div class="col s4 m4 l4 right-align icon-user center" id="icon-user">
-            <ul id="slide-out" class="side-nav search-side-nav " id="search-side-nav">
-              <div class="col s12 user-icon-div">
-                <a href="#!user" class="center-align user-icon">
-                  <img class="circle user-avatar" id="user-avatar" src="http://voice4thought.org/wp-content/uploads/2016/08/default1.jpg">
-                </a>
-              </div>
-              <div class="info-user">
-                <div class="user-view search-user-view bg-secondary center" id="search-user-view">
-                  <a href="#!name">
-                    <span class="white-text name center">User Name</span>
-                  </a>
-                  <a href="#" class="btn button-follow " type="button" name="button">Find friends</a>
-                </div>
-              </div>
-              <div class="row center fllw">
-                <div class="col s6 l6">
-                  <h6>Following</h6>
-                  <div class="following ">
-                    15
-                  </div>
-                </div>
-                <div class="col s6 l6">
-                  <h6>Followers</h6>
-                  <div class="followers">
-                    15
-                  </div>
-                </div>
-              </div>
-              <!--amigos-->
-              <div class="row friend-container" id="friend-container">
-              </div>
-            </ul>
-            <a href="#" data-activates="slide-out" class="button-collapse show-on-large active-color right">User</a>
+          <div class="info-user">
+            <div class="user-view search-user-view bg-secondary center" id="search-user-view">
+              <a href="#!name">
+                <span class="white-text name center">User Name</span>
+              </a>
+              <a href="#" class="btn button-follow " type="button" name="button">Find friends</a>
+            </div>
           </div>
-          <!--Fin de menu slide-out  -->
-        </div>
-      </nav>
-    <br>
-    <br>
- 
+          <div class="row center fllw">
+            <div class="col s6 l6">
+              <h6>Following</h6>
+              <div class="following ">
+                15
+              </div>
+            </div>
+            <div class="col s6 l6">
+              <h6>Followers</h6>
+              <div class="followers">
+                15
+              </div>
+            </div>
+          </div>
+          <!--amigos-->
+          <div class="row friend-container" id="friend-container">
+          </div>
+        </ul>
+        <a href="#" data-activates="slide-out" class="button-collapse show-on-large active-color right">User</a>
+      </div>
+      <!--Fin de menu slide-out  -->
+    </div>
+  </nav>
+  <br>
+  <br>
+
   <!--Barra lateral de perfil de usuario-->
   <ul id="slide-out" class="side-nav flex-column  center">
     <!--imagen de perfil de ususario-->
@@ -123,16 +123,32 @@
   <div class="">
     <div class="carousel carousel-slider">
       <div class="carousel-item flex-row">
-        <a  href="#one!"><img class="img-slides"src="https://i.pinimg.com/736x/84/7d/8d/847d8d0a2c748413dadaf94ab4d74966--quentin-tarantino-tarantino-movies.jpg"></a>
-        <a  href="#two!"><img class="img-slides"src="http://www.wimpykid.com/wp-content/uploads/2013/09/rodrickrulesmovie.jpg"></a>
-        <a  href="#one!"><img class="img-slides"src="http://www.cines.com.py/images/dinamico/peliculas/1441/afiche/guardianes_es.jpg" alt="Image 4"></a>
-        <a  href="#two!"><img class="img-slides"src="https://ih0.redbubble.net/image.57066806.8556/flat,1000x1000,075,f.u4.jpg"></a>
+        <a href="#one!">
+          <img class="img-slides" src="https://i.pinimg.com/736x/84/7d/8d/847d8d0a2c748413dadaf94ab4d74966--quentin-tarantino-tarantino-movies.jpg">
+        </a>
+        <a href="#two!">
+          <img class="img-slides" src="http://www.wimpykid.com/wp-content/uploads/2013/09/rodrickrulesmovie.jpg">
+        </a>
+        <a href="#one!">
+          <img class="img-slides" src="http://www.cines.com.py/images/dinamico/peliculas/1441/afiche/guardianes_es.jpg" alt="Image 4">
+        </a>
+        <a href="#two!">
+          <img class="img-slides" src="https://ih0.redbubble.net/image.57066806.8556/flat,1000x1000,075,f.u4.jpg">
+        </a>
       </div>
       <div class="carousel-item flex-row">
-        <a  href="#three!"><img class="img-slides"src="https://lumiere-a.akamaihd.net/v1/images/r_coco_header_mobile_fcfae701.jpeg?region=0%2C0%2C640%2C1020"></a>
-        <a  href="#four!"><img class="img-slides"src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRm7DSMIUdpMLwJygJiL6f8NyKkis9pndyd-D1-HAxAa7tCOkdd"></a>
-        <a  href="#one!"><img class="img-slides"src="http://s3.amazonaws.com/trendybynick.com-production/wp-content/uploads/2016/06/gallery-1466696248-hp-6-dvd-or-2d-1.jpg"></a>
-        <a  href="#two!"><img class="img-slides"src="https://lumiere-a.akamaihd.net/v1/images/r_coco_header_mobile_fcfae701.jpeg?region=0%2C0%2C640%2C1020"></a>
+        <a href="#three!">
+          <img class="img-slides" src="https://lumiere-a.akamaihd.net/v1/images/r_coco_header_mobile_fcfae701.jpeg?region=0%2C0%2C640%2C1020">
+        </a>
+        <a href="#four!">
+          <img class="img-slides" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRm7DSMIUdpMLwJygJiL6f8NyKkis9pndyd-D1-HAxAa7tCOkdd">
+        </a>
+        <a href="#one!">
+          <img class="img-slides" src="http://s3.amazonaws.com/trendybynick.com-production/wp-content/uploads/2016/06/gallery-1466696248-hp-6-dvd-or-2d-1.jpg">
+        </a>
+        <a href="#two!">
+          <img class="img-slides" src="https://lumiere-a.akamaihd.net/v1/images/r_coco_header_mobile_fcfae701.jpeg?region=0%2C0%2C640%2C1020">
+        </a>
       </div>
     </div>
   </div>
@@ -143,55 +159,58 @@
     <div class="container">
       <div class="row">
         <div class="col s6 l3">
-          <div class="container-flex">
+          <div class="container-flex" data-box="0">
             <span class="overlay">RECOMMENDED</span>
             <img src="https://i.pinimg.com/564x/cf/f5/4e/cff54ec0305954b755a2d33e74f0ea8c.jpg" alt="fondo" class="themed-img responsive-img">
           </div>
         </div>
         <div class="col s6 l3">
-            <div class="container-flex">
-                <span class="overlay">YOUNG AND FREE</span>
-                <img src="https://i.pinimg.com/564x/04/87/e7/0487e7303030fb2924fdd6c116528e0b.jpg
+          <div class="container-flex" data-box="1">
+            <span class="overlay">YOUNG AND FREE</span>
+            <img src="https://i.pinimg.com/564x/04/87/e7/0487e7303030fb2924fdd6c116528e0b.jpg
                 " alt="fondo" class="themed-img responsive-img">
-              </div>
+          </div>
         </div>
         <div class="col s6 l3">
-            <div class="container-flex">
-                <span class="overlay">FRIDAY 13th</span>
-                <img src="https://i.pinimg.com/564x/70/ab/e6/70abe67cce50ebf14bdb7c2c20a63ea4.jpg" alt="fondo" class="themed-img responsive-img">
-              </div>
+          <div class="container-flex" data-box="2">
+            <span class="overlay">FRIDAY 13th</span>
+            <img src="https://i.pinimg.com/564x/70/ab/e6/70abe67cce50ebf14bdb7c2c20a63ea4.jpg" alt="fondo" class="themed-img responsive-img">
+          </div>
         </div>
         <div class="col s6 l3">
-            <div class="container-flex">
-                <span class="overlay">VINTAGE</span>
-                <img src="https://i.pinimg.com/564x/5a/02/54/5a025484ee9df6bed1150dca3ba73184.jpg" alt="fondo" class="themed-img responsive-img">
-              </div>
+          <div class="container-flex" data-box="3">
+            <span class="overlay">VINTAGE</span>
+            <img src="https://i.pinimg.com/564x/5a/02/54/5a025484ee9df6bed1150dca3ba73184.jpg" alt="fondo" class="themed-img responsive-img">
+          </div>
         </div>
       </div>
       <div class="row">
         <div class="col s6 l3">
-          <div class="container-flex">
+          <div class="container-flex" data-box="4">
             <span class="overlay">LOL</span>
-            <img src="https://slack-redir.net/link?url=http%3A%2F%2Felapuntador.ticketmaster.es%2Fwp-content%2Fuploads%2F2017%2F11%2Frisas.jpg" alt="fondo" class="themed-img responsive-img">
+            <img src="https://slack-redir.net/link?url=http%3A%2F%2Felapuntador.ticketmaster.es%2Fwp-content%2Fuploads%2F2017%2F11%2Frisas.jpg"
+              alt="fondo" class="themed-img responsive-img">
           </div>
         </div>
         <div class="col s6 l3">
-            <div class="container-flex">
-                <span class="overlay">OUT OF YOUR WORLD</span>
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTX7lDCV7XsN1jJB49TaBKpAHeWAMXWnKKuIx6PomPFijMG2-EPtw" alt="fondo" class="themed-img responsive-img">
-              </div>
+          <div class="container-flex" data-box="5">
+            <span class="overlay">OUT OF YOUR WORLD</span>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTX7lDCV7XsN1jJB49TaBKpAHeWAMXWnKKuIx6PomPFijMG2-EPtw" alt="fondo"
+              class="themed-img responsive-img">
+          </div>
         </div>
         <div class="col s6 l3">
-            <div class="container-flex">
-                <span class="overlay">LIVE THE ADRENALINE</span>
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXtYTvfe9vSgdVSUZo3kxeMDT-l8hsxfDU-O1ChZvhqdkycpH_" alt="fondo" class="themed-img responsive-img">
-              </div>
+          <div class="container-flex" data-box="6">
+            <span class="overlay">LIVE THE ADRENALINE</span>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXtYTvfe9vSgdVSUZo3kxeMDT-l8hsxfDU-O1ChZvhqdkycpH_" alt="fondo"
+              class="themed-img responsive-img">
+          </div>
         </div>
         <div class="col s6 l3">
-            <div class="container-flex">
-                <span class="overlay">FUN & JOY</span>
-                <img src="https://si.wsj.net/public/resources/images/WE-AB258_ANIMAT_GR_20161202121913.jpg" alt="fondo" class="themed-img responsive-img">
-              </div>
+          <div class="container-flex" data-box="7">
+            <span class="overlay">FUN & JOY</span>
+            <img src="https://si.wsj.net/public/resources/images/WE-AB258_ANIMAT_GR_20161202121913.jpg" alt="fondo" class="themed-img responsive-img">
+          </div>
         </div>
       </div>
     </div>
@@ -218,7 +237,7 @@
   </footer>
   <!-- Footer version desktop -->
   <footer class="page-footer footer-desktop hide-on-small-only" id="nav-search">
-    <div class=" row " id="nab-wrapper">
+    <div class="row" id="nav-wrapper">
       <hr>
       <div class="flex-row padding-footer">
         <div class="col m6 l6 text-left">
@@ -234,6 +253,7 @@
   <script src="https://use.fontawesome.com/21b158d175.js"></script>
   <script src="../vendors/jquery/jquery-3.2.1.min.js"></script>
   <script src="../vendors/materialize/js/materialize.min.js"></script>
+  <script type="text/javascript" src="../js/data.js"></script>
   <script type="text/javascript" src="../js/home.js"></script>
 </body>
 
