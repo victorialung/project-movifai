@@ -14,25 +14,80 @@
 
 <body>
   <!--Creando estructura header: Navbar(Imput buscador-peril de usuario)-->
-  <header>
-    <!-- Barra de navegacion-->
-    <nav class="row flex-row">
-      <!--Div contenedor del logo Movifai-->
-      <div class="col s2 l2 logo">
 
-      </div>
+    <!-- Barra de navegacion-->
+    <!-- <nav class="flex-row"> -->
+      <!--Div contenedor del logo Movifai-->
+      <!-- <div class="col s2 l2 logo"> -->
+
+      <!-- </div> -->
       <!--Div contenedor del input buscador de videos-->
-      <div class="col s9 l9 input-container">
+      <!-- <div class=" input-container">
         <input class="search-input" id="search-input" type="text" name="text" value="">
-      </div>
+      </div> -->
       <!--Div contenedor de la imágen de perfil de ususario-->
-      <div class="col s1 l1 user-profile" id="user-profile">
+      <!-- <div class="col s1 l1 user-profile" id="user-profile">
         <a href="#" data-activates="slide-out" class="show-user-perfil">
           <img class="img-user" src="../assets/images/user-img.png" alt="user">
         </a>
       </div>
-    </nav>
-  </header>
+    </nav> -->
+    <nav class="bg-primary" id="nav-search">
+        <div class="nav-wrapper row " id="nab-wrapper">
+          <div class="col s4 m4 l4 left-align icon-logo" id="icon-logo">
+            <a href="#">Logo</a>
+          </div>
+          <!-- Inicio selección tematizada -->
+          <div class="col s4 m4 l4 center-align  icon-theme" id="icon-theme">
+              <form class="search-form" id="search-form">
+                  <div class="input-field circle flex-row" id="input-field">
+                    <i class="material-icons">search</i>
+                    <input id="search" class="search-input" type="search" required>
+                  </div>
+                </form>
+          </div>
+          <!--Fin selección tematizada  -->
+          <!-- Inicio de menu slide-out -->
+          <div class="col s4 m4 l4 right-align icon-user center" id="icon-user">
+            <ul id="slide-out" class="side-nav search-side-nav " id="search-side-nav">
+              <div class="col s12 user-icon-div">
+                <a href="#!user" class="center-align user-icon">
+                  <img class="circle user-avatar" id="user-avatar" src="http://voice4thought.org/wp-content/uploads/2016/08/default1.jpg">
+                </a>
+              </div>
+              <div class="info-user">
+                <div class="user-view search-user-view bg-secondary center" id="search-user-view">
+                  <a href="#!name">
+                    <span class="white-text name center">User Name</span>
+                  </a>
+                  <a href="#" class="btn button-follow " type="button" name="button">Find friends</a>
+                </div>
+              </div>
+              <div class="row center fllw">
+                <div class="col s6 l6">
+                  <h6>Following</h6>
+                  <div class="following ">
+                    15
+                  </div>
+                </div>
+                <div class="col s6 l6">
+                  <h6>Followers</h6>
+                  <div class="followers">
+                    15
+                  </div>
+                </div>
+              </div>
+              <!--amigos-->
+              <div class="row friend-container" id="friend-container">
+              </div>
+            </ul>
+            <a href="#" data-activates="slide-out" class="button-collapse show-on-large active-color right"><i class="material-icons icon-user">person</i></a>
+          </div>
+          <!--Fin de menu slide-out  -->
+        </div>
+      </nav>
+    <br>
+    <br>
   <!--Barra lateral de perfil de usuario-->
   <ul id="slide-out" class="side-nav flex-column  center">
     <!--imagen de perfil de ususario-->
@@ -46,59 +101,125 @@
       <span class="white-text name cente">User Name</span>
     </a>
     <br>
-    <a href="#" class="button-follow" type="button" name="button">Follow</a>
-    <!--informción de seguidores-->
-    <br>
-    <div class="row">
-      <div class="col s6 l6">
-        <h6>Following</h6>
-        <div class="following">
-          15
-        </div>
+    <a href="#" class="btn button-follow " type="button" name="button">Find friends</a>
+  </ul>
+  <div class="container-slider">
+    <div class="carousel carousel-slider">
+      <div class="carousel-item flex-row">
+        <a  href="#four!"><img class="img-slides"src="https://1.bp.blogspot.com/-ZQ-9YlMbXo8/V2BTZYboKOI/AAAAAAAAK30/psMGsHVuu-sqtFC6v4DAkJo81tZNchK3ACKgB/s1600/Looking%2BGlass%2Bir.jpg"></a>
+        <a  href="#three!"><img class="img-slides"src="https://lumiere-a.akamaihd.net/v1/images/r_coco_header_mobile_fcfae701.jpeg?region=0%2C0%2C640%2C1020"></a>
+        <a  href="#one!"><img class="img-slides"src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAvpv4QhJO2vRq4jOLYE2lOnrr5uasNPlJFvwQxZKuPjm6HWFVvQ"></a>
+        <a  href="#two!"><img class="img-slides"src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMucitw3onrg3gjwgdIEgFA0RmZUJ5NNwBvNfQfBRAGKmJOaYymQ"></a>
       </div>
-      <div class="col s6 l6">
-        <h6>Followers</h6>
-        <div class="followers">
-          15
-        </div>
+      <div class="carousel-item flex-row">
+        <a  href="#three!"><img class="img-slides"src="https://www.gadis.co.id/img/images/5a520d0ce1d1b48ac0f62f1712296d91.jpg"></a>
+        <a  href="#four!"><img class="img-slides"src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbXDThGsxlL_5rOksahSOK-E1LGInbgdVpcTovn41uSQmrQN_YrA"></a>
+        <a  href="#one!"><img class="img-slides"src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPjOh8epbRvNiuI1wfnQIzVgnZscnIsjaGYZpeIk_BCWa4t7rb"></a>
+        <a  href="#two!"><img class="img-slides"src="https://images-na.ssl-images-amazon.com/images/M/MV5BMTc3NTUzNTI4MV5BMl5BanBnXkFtZTgwNjU0NjU5NzE@._V1_UY1200_CR90,0,630,1200_AL_.jpg"></a>
+      </div>
+      <div class="carousel-item flex-row">
+        <a  href="#three!"><img class="img-slides"src="https://images-na.ssl-images-amazon.com/images/M/MV5BMTc3NTUzNTI4MV5BMl5BanBnXkFtZTgwNjU0NjU5NzE@._V1_UY1200_CR90,0,630,1200_AL_.jpg"></a>
+        <a  href="#four!"><img class="img-slides"src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFN45ZRu3T9N18YbeDMYQ8imTwKMNIEqhYmXOwLeYJyUtivwqkBA"></a>
+        <a  href="#one!"><img class="img-slides"src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAvpv4QhJO2vRq4jOLYE2lOnrr5uasNPlJFvwQxZKuPjm6HWFVvQ"></a>
+        <a  href="#two!"><img class="img-slides"src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGZ02i5uv06IFbN0dL_AO8Qg2fkGSdA2-UHm15EH9BTkNW51xY"></a>
       </div>
     </div>
-  </ul>
-  <!-- Slider Section -->
-  <section id="slider-section">
-    <div class="row">
-      <!-- Slider -->
-      <div id="scroll-feature" class="horiz-scroll">
-        <div class="scroller">
-          <!-- Controles scroll -->
-          <div class="left-scroll invisible">
-            <i class="fa fa-angle-left fa-4x" aria-hidden="true"></i>
+    <br>
+  </div>
+  <!-- Section themed filter -->
+  <br>
+  <br>
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col s6 l3 ">
+          <div class="box container-flex">
+            <span class="overlay">BY YOUR <br> FRIENDS</span>
+            <img src="https://i.pinimg.com/564x/cf/f5/4e/cff54ec0305954b755a2d33e74f0ea8c.jpg" alt="fondo" class="themed-img responsive-img">
           </div>
-          <div class="right-scroll">
-            <i class="fa fa-angle-right fa-4x" aria-hidden="true"></i>
+        </div>
+        <div class="col s6 l3">
+            <div class="box container-flex">
+                <span class="overlay">YOUNG AND <br> FREE</span>
+                <img src="https://i.pinimg.com/564x/04/87/e7/0487e7303030fb2924fdd6c116528e0b.jpg
+                " alt="fondo" class="themed-img responsive-img">
+              </div>
+        </div>
+        <div class="col s6 l3">
+            <div class="box container-flex">
+                <span class="overlay">FRIDAY 13th</span>
+                <img src="https://i.pinimg.com/564x/70/ab/e6/70abe67cce50ebf14bdb7c2c20a63ea4.jpg" alt="fondo" class="themed-img responsive-img">
+              </div>
+        </div>
+        <div class="col s6 l3">
+            <div class="box container-flex">
+                <span class="overlay">VINTAGE</span>
+                <img src="https://i.pinimg.com/564x/5a/02/54/5a025484ee9df6bed1150dca3ba73184.jpg" alt="fondo" class="themed-img responsive-img">
+              </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="box col s6 l3">
+          <div class="container-flex">
+            <span class="overlay">LOL</span>
+            <img src="https://slack-redir.net/link?url=http%3A%2F%2Felapuntador.ticketmaster.es%2Fwp-content%2Fuploads%2F2017%2F11%2Frisas.jpg" alt="fondo" class="themed-img responsive-img">
           </div>
-          <div class="scroll-images scrollable-x">
-            <!-- Slider images-->
-            <img class="slider-movies" src="https://i.pinimg.com/736x/84/7d/8d/847d8d0a2c748413dadaf94ab4d74966--quentin-tarantino-tarantino-movies.jpg"
-              alt="Image 2">
-            <img class="slider-movies" src="http://www.wimpykid.com/wp-content/uploads/2013/09/rodrickrulesmovie.jpg" alt="Image 3">
-            <img class="slider-movies" src="http://www.cines.com.py/images/dinamico/peliculas/1441/afiche/guardianes_es.jpg" alt="Image 4">
-            <img class="slider-movies" src="https://ih0.redbubble.net/image.57066806.8556/flat,1000x1000,075,f.u4.jpg" alt="Image 5">
-            <img class="slider-movies" src="https://lumiere-a.akamaihd.net/v1/images/r_coco_header_mobile_fcfae701.jpeg?region=0%2C0%2C640%2C1020"
-              alt="Image 6">
-            <img class="slider-movies" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRm7DSMIUdpMLwJygJiL6f8NyKkis9pndyd-D1-HAxAa7tCOkdd"
-              alt="Image 7">
-            <img class="slider-movies" src="http://www.deperu.com/cine/portadas/portada233.jpg" alt="Image 8">
-            <img class="slider-movies" src="http://s3.amazonaws.com/trendybynick.com-production/wp-content/uploads/2016/06/gallery-1466696248-hp-6-dvd-or-2d-1.jpg"
-              alt="Image 9">
-            <img class="slider-movies" src="https://alienationmentale.files.wordpress.com/2015/08/inside-llewyn-out.jpg" alt="Image 10">
-              alt="Image 10">
-            <img class="slider-movies" src="http://data.whicdn.com/images/50672326/tumblr_mhaoorAOty1qzkg8ro1_500_large.jpg" alt="Image 11">
-          </div>
+        </div>
+        <div class="col s6 l3">
+            <div class="box container-flex">
+                <span class="overlay">OUT OF YOUR <br> WORLD</span>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTX7lDCV7XsN1jJB49TaBKpAHeWAMXWnKKuIx6PomPFijMG2-EPtw" alt="fondo" class="themed-img responsive-img">
+              </div>
+        </div>
+        <div class="col s6 l3">
+            <div class="box container-flex">
+                <span class="overlay">LIVE THE <br> ADRENALINE</span>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXtYTvfe9vSgdVSUZo3kxeMDT-l8hsxfDU-O1ChZvhqdkycpH_" alt="fondo" class="themed-img responsive-img">
+              </div>
+        </div>
+        <div class="col s6 l3">
+            <div class="box container-flex">
+                <span class="overlay">FUN & JOY</span>
+                <img src="https://si.wsj.net/public/resources/images/WE-AB258_ANIMAT_GR_20161202121913.jpg" alt="fondo" class="themed-img responsive-img">
+              </div>
         </div>
       </div>
     </div>
   </section>
+  <!-- section footer desktop/mobile -->
+  <footer class="page-footer hide-on-med-and-up bg-primary" id="nav-search">
+    <div class=" row " id="nab-wrapper">
+      <div class="col s2  left-align icon-home" id="icon-home">
+        <a href="home.html" class="icon-home">
+          <i class="material-icons divider-color">home</i>
+        </a>
+      </div>
+      <div class="col s8  center-align icon-search" id="icon-search">
+        <a href="search.html" class="icon-search">
+          <i class="material-icons divider-color">search</i>
+        </a>
+      </div>
+      <div class="col s2  right-align icon-friends" id="icon-friends">
+        <a href="#" class="icon-friends">
+          <i class="material-icons divider-color">people</i>
+        </a>
+      </div>
+    </div>
+  </footer>
+  <!-- Footer version desktop -->
+  <footer class="page-footer footer-desktop hide-on-small-only" id="nav-search">
+    <div class=" row " id="nab-wrapper">
+      <hr>
+      <div class="flex-row padding-footer">
+        <div class="col m6 l6 text-left">
+          © 2018 Movifai Web-App. All Rights Reserved
+        </div>
+        <div class="col m6 l6 text-right">
+          Movify Girls Team Group.
+        </div>
+      </div>
+    </div>
+  </footer>
   <!-- enlazando archivos js -->
   <script src="https://use.fontawesome.com/21b158d175.js"></script>
   <script src="../vendors/jquery/jquery-3.2.1.min.js"></script>
