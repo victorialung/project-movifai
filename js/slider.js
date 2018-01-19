@@ -1,9 +1,9 @@
-// Inicializamos el document
-$(document).ready(function(){
+//Inicializamos el document
+$(document).ready(function () {
   $('.slider').slider();
-  
-// Initialize Firebase
-var config = {
+
+  // Initialize Firebase
+  var config = {
     apiKey: "AIzaSyAEq19iFWUKTSHBQ8J4q-tFx-a3AXjg4dg",
     authDomain: "movifai-e47d0.firebaseapp.com",
     databaseURL: "https://movifai-e47d0.firebaseio.com",
@@ -12,10 +12,10 @@ var config = {
     messagingSenderId: "11379636808"
   };
   firebase.initializeApp(config);
-// Indicamos que google sera el proveedor 
-var provider = new firebase.auth.GoogleAuthProvider();
+  // Indicamos que google sera el proveedor
+  var provider = new firebase.auth.GoogleAuthProvider();
 
-// Función para guardar automáticamente
+  // Función para guardar automáticamente
   function save(user) {
     var usuario = {
       uid: user.uid,
@@ -27,8 +27,8 @@ var provider = new firebase.auth.GoogleAuthProvider();
   };
 
   // Evento para el botón Inicia sesión
-  $('#btn-login').on('click', function() {
-    firebase.auth().signInWithPopup(provider).then(function(result) {
+  $('#btn-login').on('click', function () {
+    firebase.auth().signInWithPopup(provider).then(function (result) {
       save(result.user);
       // Guardando en el localstorage
       window.localStorage.setItem('name', result.user.displayName);

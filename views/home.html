@@ -59,7 +59,7 @@
           <div class="info-user">
             <div class="user-view search-user-view bg-secondary center" id="search-user-view">
               <a href="#!name">
-                <span class="white-text name center">User Name</span>
+                <span class="white-text name center" id="name-user">User Name</span>
               </a>
               <a href="#" class="btn button-follow " type="button" name="button">Find friends</a>
             </div>
@@ -82,7 +82,7 @@
           <div class="row friend-container" id="friend-container">
           </div>
         </ul>
-        <a href="#" data-activates="slide-out" class="button-collapse show-on-large active-color right">User</a>
+        <a href="#" data-activates="slide-out" id="btn-nav" class="button-collapse show-on-large active-color right">User</a>
       </div>
       <!--Fin de menu slide-out  -->
     </div>
@@ -158,14 +158,14 @@
     <div class="container">
       <div class="row">
         <div class="col s6 l3 ">
-          <div class="box container-flex">
+          <div class="box container-flex" data-box="0">
             <span class="overlay">BY YOUR
               <br> FRIENDS</span>
             <img src="https://i.pinimg.com/564x/cf/f5/4e/cff54ec0305954b755a2d33e74f0ea8c.jpg" alt="fondo" class="themed-img responsive-img">
           </div>
         </div>
         <div class="col s6 l3">
-          <div class="box container-flex">
+          <div class="box container-flex" data-box="1">
             <span class="overlay">YOUNG AND
               <br> FREE</span>
             <img src="https://i.pinimg.com/564x/04/87/e7/0487e7303030fb2924fdd6c116528e0b.jpg
@@ -173,13 +173,13 @@
           </div>
         </div>
         <div class="col s6 l3">
-          <div class="box container-flex">
+          <div class="box container-flex" data-box="2">
             <span class="overlay">FRIDAY 13th</span>
             <img src="https://i.pinimg.com/564x/70/ab/e6/70abe67cce50ebf14bdb7c2c20a63ea4.jpg" alt="fondo" class="themed-img responsive-img">
           </div>
         </div>
         <div class="col s6 l3">
-          <div class="box container-flex">
+          <div class="box container-flex" data-box="3">
             <span class="overlay">VINTAGE</span>
             <img src="https://i.pinimg.com/564x/5a/02/54/5a025484ee9df6bed1150dca3ba73184.jpg" alt="fondo" class="themed-img responsive-img">
           </div>
@@ -187,13 +187,13 @@
       </div>
       <div class="row">
         <div class="box col s6 l3">
-          <div class="container-flex">
+          <div class="container-flex" data-box="4">
             <span class="overlay">LOL</span>
             <img src="http://blog.ticketmaster.es/wp-content/uploads/2017/11/risas.jpg" alt="fondo" class="themed-img responsive-img">
           </div>
         </div>
         <div class="col s6 l3">
-          <div class="box container-flex">
+          <div class="box container-flex" data-box="5">
             <span class="overlay">OUT OF YOUR
               <br> WORLD</span>
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTX7lDCV7XsN1jJB49TaBKpAHeWAMXWnKKuIx6PomPFijMG2-EPtw" alt="fondo"
@@ -201,7 +201,7 @@
           </div>
         </div>
         <div class="col s6 l3">
-          <div class="box container-flex">
+          <div class="box container-flex" data-box="6">
             <span class="overlay">LIVE THE
               <br> ADRENALINE</span>
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXtYTvfe9vSgdVSUZo3kxeMDT-l8hsxfDU-O1ChZvhqdkycpH_" alt="fondo"
@@ -209,7 +209,7 @@
           </div>
         </div>
         <div class="col s6 l3">
-          <div class="box container-flex">
+          <div class="box container-flex" data-box="7">
             <span class="overlay">FUN & JOY</span>
             <img src="https://si.wsj.net/public/resources/images/WE-AB258_ANIMAT_GR_20161202121913.jpg" alt="fondo" class="themed-img responsive-img">
           </div>
@@ -259,6 +259,7 @@
   <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase-database.js"></script>
   <script src="../vendors/jquery/jquery-3.2.1.min.js"></script>
   <script src="../vendors/materialize/js/materialize.min.js"></script>
+  <script src="../js/data.js"></script>
   <script src="../js/slider.js"></script>
   <script type="text/javascript" src="../js/home.js"></script>
 </body>

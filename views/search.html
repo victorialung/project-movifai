@@ -1,89 +1,112 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>movifai</title>
-  <link rel="shortcut icon" href="assets/img/favicon.png" />
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,700,900" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link rel="stylesheet" href="../vendors/materialize/css/materialize.min.css">
-  <link rel="stylesheet" href="../css/search.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,700,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="../vendors/materialize/css/materialize.min.css">
+    <link rel="stylesheet" href="../css/search.css">
+    <title>Movifai</title>
 </head>
-
 <body class="black">
-  <nav class="black">
-    <div class="row">
-      <div class="col s12">
-        <div class="nav-wrapper">
-          <a href="#" class="brand-logo left">
-            <i class="material-icons">movie</i>
-          </a>
-          <a href="#" class="brand-logo center">SEARCH</a>
-          <a href="#" class="brand-logo right">
-            <i class="material-icons">person</i>
-          </a>
-        </div>
+  <nav class="bg-primary" id="nav-search">
+    <div class="nav-wrapper row " id="nab-wrapper">
+      <div class="col s4 m4 l4 left-align icon-logo" id="icon-logo">
+        <a href="#"><img class="responsive-img logo"src="../assets/img/logo-1.png" alt="logo"></a>
       </div>
-    </div>
-    </div>
+      <!-- Inicio de menu slide-out -->
+      <div class="col s4 m4 l4 right-align icon-user center" id="icon-user">
+        <ul id="slide-out" class="side-nav search-side-nav " id="search-side-nav">
+          <div class="col s12 user-icon-div">
+            <a href="#!user" class="center-align user-icon">
+              <img class="circle user-avatar" id="user-avatar" src="http://voice4thought.org/wp-content/uploads/2016/08/default1.jpg">
+            </a>
+          </div>
+          <div class="info-user">
+            <div class="user-view search-user-view bg-secondary center" id="search-user-view">
+              <a href="#!name">
+                <span class="white-text name center">User Name</span>
+              </a>
+              <a href="#" class="btn button-follow " type="button" name="button">Find friends</a>
+            </div>
+          </div>
+          <div class="row center fllw">
+            <div class="col s6 l6">
+              <h6>Following</h6>
+              <div class="following ">
+                15
+              </div>
+            </div>
+            <div class="col s6 l6">
+              <h6>Followers</h6>
+              <div class="followers">
+                15
+              </div>
+            </div>
+          </div>
+          <!--amigos-->
+          <div class="row friend-container" id="friend-container">
+          </div>
+        </ul>
+        <a href="#" data-activates="slide-out" id="btn-nav"class="button-collapse show-on-large active-color right">User</a>
+      </div>
+      <!--Fin de menu slide-out  -->
     </div>
   </nav>
-  <div class="container">
-    <div class="row">
-      <div class="col s12">
-        <div class="card-panel center grey darken-3 white-text">
-          <h5 class="center-align">Search For Any Movie</h5>
-          <form id="searchForm">
-            <input class="form-control" id="searchText" type="text" placeholder="Search movie...">
-          </form>
+    <div class="container">
+        <div class="row">
+            <div class="col s12">
+                <div class="card-panel center grey darken-3 white-text">
+                    <h5 class="center-align">Search For Any Movie</h5>
+                    <form id="searchForm">
+                        <input class="form-control" id="searchText" type="text" placeholder="Search movie...">
+                    </form>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-  </div>
-  <div class="container">
-    <div id="movies" class="row movies"></div>
-  </div>
-  <!-- section footer desktop/mobile -->
-  <footer class="page-footer hide-on-med-and-up bg-primary" id="nav-search">
-    <div class=" row " id="nab-wrapper">
-      <div class="col s2  left-align icon-home" id="icon-home">
-        <a href="home.html" class="icon-home">
-          <i class="material-icons divider-color">home</i>
-        </a>
-      </div>
-      <div class="col s8  center-align icon-search" id="icon-search">
-        <a href="search.html" class="icon-search">
-          <i class="material-icons divider-color">search</i>
-        </a>
-      </div>
-      <div class="col s2  right-align icon-friends" id="icon-friends">
-        <a href="#" class="icon-friends">
-          <i class="material-icons divider-color">people</i>
-        </a>
-      </div>
+    <div class="container">
+        <div id="movies" class="row movies"></div>
     </div>
-  </footer>
-  <!-- Footer version desktop -->
-  <footer class="page-footer footer-desktop hide-on-small-only" id="nav-search">
-    <div class=" row " id="nab-wrapper">
-      <hr>
-      <div class="flex-row padding-footer">
-        <div class="col m6 l6 text-left">
-          © 2018 Movifai Web-App. All Rights Reserved
-        </div>
-        <div class="col m6 l6 text-right">
-          Movify Girls Team Group.
-        </div>
-      </div>
-    </div>
-  </footer>
-  <script src="../vendors/jquery/jquery-3.2.1.min.js"></script>
-  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-  <script src="../vendors/materialize/js/materialize.min.js"></script>
-  <script type="text/javascript" src="../js/search.js"></script>
+    <!-- section footer desktop/mobile -->
+    <footer class="page-footer hide-on-med-and-up bg-primary" id="nav-search">
+          <div class=" row " id="nab-wrapper">
+            <div class="col s2  left-align icon-home" id="icon-home">
+              <a href="home.html" class="icon-home">
+                <i class="material-icons divider-color icon-footer">home</i>
+              </a>
+            </div>
+            <div class="col s8  center-align icon-search" id="icon-search">
+              <a href="search.html" class="icon-search">
+                <i class="material-icons divider-color icon-footer">search</i>
+              </a>
+            </div>
+            <div class="col s2  right-align icon-friends" id="icon-friends">
+              <a href="#" class="icon-friends">
+                <i class="material-icons divider-color icon-footer">people</i>
+              </a>
+            </div>
+          </div>
+        </footer>
+        <!-- Footer version desktop -->
+        <footer class="page-footer footer-desktop hide-on-small-only" id="nav-search">
+          <div class=" row " id="nab-wrapper">
+            <hr>
+            <div class="flex-row padding-footer">
+              <div class="col m6 l6 text-left">
+                © 2018 Movifai Web-App. All Rights Reserved
+              </div>
+              <div class="col m6 l6 text-right">
+                Movify Girls Team Group.
+              </div>
+            </div>
+          </div>
+        </footer>
+    <script src="../vendors/jquery/jquery-3.2.1.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="../vendors/materialize/js/materialize.min.js"></script>
+    <script type="text/javascript" src="../js/search.js"></script>
 </body>
-
 </html>
