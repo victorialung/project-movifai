@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 * {
   margin: 0;
   padding: 0;
@@ -53,6 +51,7 @@
 
 /* input form search style */
 
+
 /* .input-field{
   position: relative;
 }
@@ -61,6 +60,7 @@
   left: 20%;
   bottom:20%;
 } */
+
 
 /* navbar style */
 
@@ -79,14 +79,15 @@ input #search .search-input {
 .input-field input[type=search]:focus {
   background-color: #949494;
   color: #ffffff;
-
 }
+
 
 /* search result style */
 
 .card .card-reveal {
   background-color: #212121;
 }
+
 
 /* footer */
 
@@ -101,66 +102,71 @@ input #search .search-input {
   font-size: .8rem !important;
   color: whitesmoke;
 }
->>>>>>> aab183b915f47e6b48fc4a9f5ceca31f29b39cf5
-.movies img, #movie img{
-    width: 100%;
-    height: 21em;
+
+.movies img,
+#movie img {
+  width: 100%;
+  height: 21em;
 }
 
-.movies .well{
-    height: 30em;
+.movies .well {
+  height: 30em;
 }
 
-.text-tittle{
-    height: 4em;
+.text-tittle {
+  height: 4em;
 }
 
-.details{
-    height: 6em;
+.details {
+  height: 6em;
 }
-<<<<<<< HEAD
-=======
+
+
 /* footer */
 
 .bg-primary {
- background-color: #212121;
+  background-color: #212121;
 }
+
 .page-footer {
- position: fixed;
- bottom: 0;
- left: 0;
- width: 100%
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%
 }
-a .icon-home :visited{
- color: #ff5252;
+
+a .icon-home :visited {
+  color: #ff5252;
 }
+
+
 /* color para los iconos en estado normal */
 
 .divider-color {
- color: #bdbdbd;
+  color: #bdbdbd;
 }
+
 .text-left {
- text-align: left;
+  text-align: left;
 }
+
 .text-right {
- text-align: right;
+  text-align: right;
 }
+
 .padding-footer {
- padding: 0 10px;
+  padding: 0 10px;
 }
+
 .footer-desktop {
- padding:0;
- z-index: 1001;
- background-color: #212121;
+  padding: 0;
+  z-index: 1001;
+  background-color: #212121;
 }
+
 
 /* CSS media query within a style sheet  */
 
-@media (min-width: 768px) {
+@media (min-width: 768px) {}
 
-}
-
-@media (min-width: 992px) {
-
-}
->>>>>>> aab183b915f47e6b48fc4a9f5ceca31f29b39cf5
+@media (min-width: 992px) {}

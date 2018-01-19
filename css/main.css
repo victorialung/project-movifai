@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.vh-100 {
+  height: 100vh;
+}
+
+/* index */
+
+.loader {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+/* color para tipografía*/
+
+.text-color {
+  color: #ffffff;
+}
+
+/* color para el logo y los iconos en active*/
+
+.active-color {
+  color: #ff5252;
+}
+
+/* color para background version desktop y app */
+
+.bg-primary {
+  background-color: #212121;
+}
+
+.bg-secondary {
+  color: #757575;
+}
+
+/* gris de matiz intermedio */
+
+.secondary-color {
+  color: #757575;
+}
+
+/* color para los icono en estado normal */
+
+.divider-color {
+  color: #bdbdbd;
+}
+
+/* input form search style */
+
+/* .input-field{
+    position: relative;
+  }
+  .label-icon{
+    position: absolute;
+    left: 20%;
+    bottom:20%;
+  } */
+
+
+/* navbar style */
+
+.p-side-1 {
+  padding: 0 1rem;
+}
+
+.search-form {
+  border-radius: 8px;
+}
+
+input #search .search-input {
+  box-shadow: #fff !important;
+}
+
+.input-field input[type=search]:focus {
+  background-color: #949494;
+  color: #ffffff;
+}
+
+/* search result style */
+
+.card .card-reveal {
+  background-color: #212121;
+}
+
+/* footer */
+
+.page-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%
+}
+
+.info-font {
+  font-size: .8rem !important;
+  color: whitesmoke;
+}
+
+.movies img,
+#movie img {
+  width: 100%;
+  height: 21em;
+}
+
+.movies .well {
+  height: 30em;
+}
+
+.text-tittle {
+  height: 4em;
+}
+
+.details {
+  height: 6em;
+}
+
+
+/* footer */
+
+.bg-primary {
+  background-color: #212121;
+}
+
+.page-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%
+}
+
+a .icon-home :visited {
+  color: #ff5252;
+}
+
+
+/* color para los iconos en estado normal */
+
+.divider-color {
+  color: #bdbdbd;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.padding-footer {
+  padding: 0 10px;
+}
+
+.footer-desktop {
+  padding: 0;
+  z-index: 1001;
+  background-color: #212121;
+}
+
+
+/* CSS media query within a style sheet  */
+
+@media (min-width: 768px) {}
+
+@media (min-width: 992px) {}

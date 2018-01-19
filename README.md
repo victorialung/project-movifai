@@ -30,11 +30,11 @@ Sirve para darte la mejor experiencia posible en ver películas ,desde la búsqu
     ¿Te gustaría acceder a la aplicación que usas con tu cuenta de gmail o facebook?==
 
    3.En los resultados recavados se encontro que :
-
-| Pregunta  | Pregunta|Pregunta| Pregunta  | Pregunta|
-|--------|--------||--------||--------|--------|
-|   ![](assets/img/pregunta1.png)     |  ![](assets/img/pregunta2.png)       |![](assets/img/pregunta3.png) |   ![](assets/img/pregunta4.png)     |  ![](assets/img/pregunta5.png)       |
-
+  ![pregunta1](assets/img/pregunta1.png)     
+  ![pregunta2](assets/img/pregunta2.png)       
+  ![pregunta3](assets/img/pregunta3.png) 
+  ![pregunta4](assets/img/pregunta4.png)    
+  ![pregunta5](assets/img/pregunta5.png)       
 
 ### **¿Cómo se organizaron / dividieron el trabajo?**
 1. Intercambio de contactos(grupo whatsapp y slack)
@@ -45,9 +45,15 @@ Sirve para darte la mejor experiencia posible en ver películas ,desde la búsqu
    - Sketch - todo el equipo
    - Prototipo - Maythe y Esthefany
    - Creación de carpetas - Milagros , Esthefany y Victoria
-   - Vista Sign Up - Maythe
    - Vista Inicio - Esthefany
    - README - Isabel, Victoria y Milagros
+   - Funcionalidad /OMDB - Milagros, Isabel y Victoria
+   - Inicio de sesión /Firebase - Esthefany
+   - Vista home - Esthefany, Maythe y Milagros
+   - Vista search y search-theme - Victoria e Isabel
+   - Vista video - Isabel
+   - Vista splash - Victoria
+   - Merging y unificación de estilos - Maythe y Esthefany
     
 4. Estudio de competencia(referencia): 
 	[popcorn-time](https://popcorn-time.to/)
