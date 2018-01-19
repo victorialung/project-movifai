@@ -253,3 +253,20 @@ nav{
   opacity: 0;
   transition: .5s ease-in-out;
 }
+/* Estilos sección filtros temáticos */
+
+.overlay {
+  font-size: 1.3em;
+  position: absolute;
+  z-index: 100;
+}
+
+.container-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.opacity-img {
+  filter: opacity(0.5);
+}
