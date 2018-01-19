@@ -1,0 +1,7 @@
+body{
+    background: black;
+}
+
+.active-color {
+    background: #ff5252 !important;
+}
