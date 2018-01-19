@@ -4,6 +4,13 @@ $(document).ready(function() {
   $('.show-user-perfil').sideNav();
 // activando slider
   $('.carousel.carousel-slider').carousel({fullWidth: true});
+// Cambiamos los datos por default por los datos del usuario
+$('#btn-nav').on('click', function(){
+  var user = firebase.auth().currentUser;
+  $('#user-avatar').attr('src', user.photoURL);
+  $('#name-user').text(user.displayName);
+})
+
 
   //Función para
 $(document).ready(function () {

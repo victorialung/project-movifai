@@ -35,16 +35,16 @@
     <nav class="bg-primary" id="nav-search">
         <div class="nav-wrapper row " id="nab-wrapper">
           <div class="col s4 m4 l4 left-align icon-logo" id="icon-logo">
-            <a href="#">Logo</a>
+            <a href="#"><img class="responsive-img logo"src="../assets/images/logo-1.png" alt="logo"></a>
           </div>
           <!-- Inicio selección tematizada -->
           <div class="col s4 m4 l4 center-align  icon-theme" id="icon-theme">
-              <form class="search-form" id="search-form">
-                  <div class="input-field circle flex-row" id="input-field">
-                    <i class="material-icons">search</i>
-                    <input id="search" class="search-input" type="search" required>
-                  </div>
-                </form>
+            <form class="search-form" id="search-form">
+              <div class="input-field circle flex-row" id="input-field">
+                <i class="material-icons">search</i>
+                <input id="search" class="search-input" type="search" required>
+              </div>
+            </form>
           </div>
           <!--Fin selección tematizada  -->
           <!-- Inicio de menu slide-out -->
@@ -58,7 +58,7 @@
               <div class="info-user">
                 <div class="user-view search-user-view bg-secondary center" id="search-user-view">
                   <a href="#!name">
-                    <span class="white-text name center">User Name</span>
+                    <span id="name-user"class="white-text name center">User Name</span>
                   </a>
                   <a href="#" class="btn button-follow " type="button" name="button">Find friends</a>
                 </div>
@@ -81,7 +81,7 @@
               <div class="row friend-container" id="friend-container">
               </div>
             </ul>
-            <a href="#" data-activates="slide-out" class="button-collapse show-on-large active-color right"><i class="material-icons icon-user">person</i></a>
+            <a href="#" id="btn-nav" data-activates="slide-out" class="button-collapse show-on-large active-color right"><i class="material-icons icon-user">person</i></a>
           </div>
           <!--Fin de menu slide-out  -->
         </div>
@@ -162,7 +162,7 @@
         <div class="box col s6 l3">
           <div class="container-flex">
             <span class="overlay">LOL</span>
-            <img src="https://slack-redir.net/link?url=http%3A%2F%2Felapuntador.ticketmaster.es%2Fwp-content%2Fuploads%2F2017%2F11%2Frisas.jpg" alt="fondo" class="themed-img responsive-img">
+            <img src="http://blog.ticketmaster.es/wp-content/uploads/2017/11/risas.jpg" alt="fondo" class="themed-img responsive-img">
           </div>
         </div>
         <div class="col s6 l3">
@@ -222,9 +222,14 @@
   </footer>
   <!-- enlazando archivos js -->
   <script src="https://use.fontawesome.com/21b158d175.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.8.2/firebase.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase-database.js"></script>
   <script src="../vendors/jquery/jquery-3.2.1.min.js"></script>
   <script src="../vendors/materialize/js/materialize.min.js"></script>
   <script type="text/javascript" src="../js/home.js"></script>
+  <script src="../js/app.js"></script>
 </body>
 
 </html>
