@@ -17,21 +17,24 @@
 <body>
 
   <div class="container">
-    <h1>OMDB</h1>
-    <div class="row">
-      <div class="col">
-        <h2>Busca</h2>
-        <input id="titleFld" class="form-control" type="text">
-        <button id="searchBtn" class="btn">Buscar</button>
-        <div id="movie"></div>
-      </div>
+    <div class="jumbotron">
+      <form id="searchForm" action="">
+        <input id="searchText" type="text" class="" placeholder="Search movies...">
+      </form>
+      <button id="searchBtn" >Search</button>
     </div>
   </div>
 
+  <div class="container">
+    <div id="movies" class="row">
+
+    </div>
+  </div>
 </body>
 <!--Import jQuery before materialize.js-->
 <script type="text/javascript" src="vendors/jquery/jquery-3.2.1.min.js"></script>
 <script type="text/javascript" src="vendors/materialize/js/materialize.min.js"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 <script src="js/app.js"></script>
 </body>
 
