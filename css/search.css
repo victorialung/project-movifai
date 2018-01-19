@@ -59,25 +59,27 @@ input #search .search-input{
 .side-nav{
   background-color: rgba(44, 48, 56, 0.7);
 }
+.user-icon-div{
+  margin-top: 50px;
+}
 .user-avatar{
   width: 100px;
-  margin-top: 15px;
-}
-.border{
-  width: 130px;
-  height: 130px;
-  border: 1px solid #FF5252;
-  border-radius: 130px;
-  margin-top: 40px;
 }
 .info-user{
+  margin-top: 30px;
   padding: 10px;
 }
+.fllw{
+  margin-top: -10px;
+}
 .button-follow{
-  width: 55px;
-  border: 1px solid #FF5252;
+  padding: 5px !important;
+  border-radius: 25px !important;
+  height: 40px !important;
   border-radius: 5px;
-  background: none;
+  background: #e53935;
+  background: -webkit-linear-gradient(to right, #e35d5b, #e53935);
+  background: linear-gradient(to right, #e35d5b, #e53935);
   color: #ffff;
   font-size: 10px;
 }

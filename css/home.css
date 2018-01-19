@@ -10,10 +10,13 @@ body{
   background: #212121;
   color: #ffff;
   text-align: center;
+  font-family: 'Montserrat', sans-serif;
 }
 /* estilos de para header*/
 header{
-  outline: 1px solid red;
+  background: #e53935;
+  background: -webkit-linear-gradient(to right, #e53935, #e35d5b);
+  color: #ffff;
 }
 nav{
   outline: 1px solid red;
@@ -48,27 +51,25 @@ nav{
 }
 /* estilos vista profile*/
 .side-nav{
-  background-color: rgba(44, 48, 56, 0.7)
+  background-color: rgba(41, 40, 42, 0.9);
 }
 .img-user-perfil{
   width: 100px;
   height:100px;
 }
 .user-view{
-  margin-top: 20px;
-  /*border: 1px solid #FF5252;*/
-
-}
-.name{
-  margin-top: 5px;
+  margin-top: 40px;
 }
 .button-follow{
-  border: 1px solid #FF5252;
+  padding: 5px !important;
+  border-radius: 25px !important;
+  height: 40px !important;
   border-radius: 5px;
-  background: none;
+  background: #e53935;
+  background: -webkit-linear-gradient(to right, #e35d5b, #e53935);
+  background: linear-gradient(to right, #e35d5b, #e53935);
   color: #ffff;
-  font-weight: 600;
-  padding: 3px 7px;
+  font-size: 10px;
 }
 .button-follow:active{
   background: #FF5252;
