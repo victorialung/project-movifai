@@ -2,6 +2,12 @@
 $(document).ready(function() {
 // activando barra lateral de peril de usuario
   $('.show-user-perfil').sideNav();
+// Cambiamos los datos por default por los datos del usuario
+$('#btn-nav').on('click', function(){
+  var user = firebase.auth().currentUser;
+  $('#user-avatar').attr('src', user.photoURL);
+  $('#name-user').text(user.displayName);
+})
 
 // slider 
 function HorizontalScroller(elem) {
