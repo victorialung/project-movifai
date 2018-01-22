@@ -96,7 +96,11 @@ header{
   }
 }
 /* Estilos themed section */
-
+.themed-img{
+ margin-bottom: 2.5em;
+ min-width: 3em;
+ min-height: 3em;
+}
 .overlay {
   font-size: 1.3em;
   position: absolute;
