@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Movifai</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,700,900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="../vendors/materialize/css/materialize.min.css">
+  <link rel="stylesheet" href="../css/search.css">
+  <link rel="stylesheet" href="../css/home.css">
+  <link rel="stylesheet" href="../css/friends.css">
+  
+</head>
+
+<body class="black">
+  <nav class="bg-primary" id="nav-search">
+    <div class="nav-wrapper row " id="nab-wrapper">
+      <div class="col s4 m4 l4 left-align icon-logo" id="icon-logo">
+        <a href="#">
+          <img class="responsive-img logo" src="../assets/img/logo-1.png" alt="logo">
+        </a>
+      </div>
+      <!-- Inicio de menu slide-out -->
+      <div class="col s4 m4 l4 right-align icon-user center" id="icon-user">
+        <ul id="slide-out" class="side-nav search-side-nav " id="search-side-nav">
+          <div class="col s12 user-icon-div">
+            <a href="#!user" class="center-align user-icon">
+              <img class="circle user-avatar" id="user-avatar" src="http://voice4thought.org/wp-content/uploads/2016/08/default1.jpg">
+            </a>
+          </div>
+          <div class="info-user">
+            <div class="user-view search-user-view bg-secondary center" id="search-user-view">
+              <a href="#!name">
+                <span class="white-text name center" id="name-user">User Name</span>
+              </a>
+              <a href="friends.html" class="btn button-follow " type="button" name="button">Find friends</a>
+            </div>
+          </div>
+          <div class="row center fllw">
+            <div class="col s6 l6">
+              <h6>Following</h6>
+              <div class="following ">
+                1
+              </div>
+            </div>
+            <div class="col s6 l6">
+              <h6>Followers</h6>
+              <div class="followers">
+                1
+              </div>
+            </div>
+          </div>
+          <!--amigos-->
+          <div class="row friend-container" id="friend-container">
+          </div>
+        </ul>
+        <a href="#" data-activates="slide-out" id="btn-nav" class="button-collapse show-on-large active-color right">User</a>
+      </div>
+      <!--Fin de menu slide-out  -->
+    </div>
+  </nav>
+  <br>
+  <br>
+  <!--Barra lateral de perfil de usuario-->
+  <ul id="slide-out" class="side-nav flex-column  center">
+    <!--imagen de perfil de ususario-->
+    <li>
+      <div class="user-view">
+        <!-- <img class="img-user-perfil" src="../assets/images/user-img.png" alt="user"> -->
+      </div>
+    </li>
+    <!--nombre de usuario-->
+    <a href="#!name">
+      <span class="white-text name cente">User Name</span>
+    </a>
+    <br>
+    <a href="#" class="btn button-follow " type="button" name="button">Find friends</a>
+  </ul>
+
+  <div class="container">
+    <div class="row">
+      <div class="col s12">
+        <div class="card-panel center grey darken-3 white-text">
+          <h5 class="center-align">Search friends</h5>
+          <form id="searchForm">
+            <input class="form-control" id="searchText" type="text" placeholder="Name">
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div id="friends" class="row movies">
+      <div class="well">
+        <div class="center-align">
+          <img class="responsive-img circle" src="http://lorempixel.com/1000/1000" alt="loremimage">
+          <p>Name</p>
+          <a id="btn-follow" class="waves-effect waves-light btn">follow</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- section footer desktop/mobile -->
+  <footer class="page-footer hide-on-med-and-up bg-primary" id="nav-search">
+    <div class=" row " id="nab-wrapper">
+      <div class="col s2  left-align icon-home" id="icon-home">
+        <a href="home.html" class="icon-home">
+          <i class="material-icons divider-color icon-footer">home</i>
+        </a>
+      </div>
+      <div class="col s8  center-align icon-search" id="icon-search">
+        <a href="search.html" class="icon-search">
+          <i class="material-icons divider-color icon-footer">search</i>
+        </a>
+      </div>
+      <div class="col s2  right-align icon-friends" id="icon-friends">
+        <a href="#" class="icon-friends">
+          <i class="material-icons divider-color icon-footer">people</i>
+        </a>
+      </div>
+    </div>
+  </footer>
+  <!-- Footer version desktop -->
+  <footer class="page-footer footer-desktop hide-on-small-only" id="nav-search">
+    <div class=" row " id="nab-wrapper">
+      <hr>
+      <div class="flex-row padding-footer">
+        <div class="col m6 l6 text-left">
+          © 2018 Movifai Web-App. All Rights Reserved
+        </div>
+        <div class="col m6 l6 text-right">
+          Movify Girls Team Group.
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="../vendors/jquery/jquery-3.2.1.min.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.8.2/firebase.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase-database.js"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="../vendors/materialize/js/materialize.min.js"></script>
+  <script type="text/javascript" src="../js/slider.js"></script>
+  <script type="text/javascript" src="../js/search.js"></script>
+  <script type="text/javascript" src="../js/friends.js"></script>
+  
+  
+</body>
+
+</html>
