@@ -84,6 +84,11 @@ nav{
     width: 60px;
     height:60px;
   }
+
+  .themed-img {
+    margin-bottom: 2.5em;
+    min-width: 6em;
+  }
 }
 
 /* Estilos Slider Section */
@@ -99,6 +104,12 @@ nav{
   }
 }
 /* Estilos themed section */
+
+.themed-img{
+  margin-bottom: 2.5em;
+  min-width: 3em;
+  min-heigth: 3em;
+}
 
 .overlay {
   font-size: 1.3em;
