@@ -3,10 +3,25 @@
     margin:0;
     box-sizing: border-box;
 }
-
 .color {
     background-color: #ff5252;
 }
 .color:hover {
     background-color: #757575;
 }
+.img-slider {
+    opacity: 0.6;
+    filter:blur(1px);
+}
+.container-btn {
+    margin:auto;
+    text-align: center;
+}
+#btn-login {
+    position: relative;
+    z-index: 1001;
+    margin-top:35% !important;
+}
+/* .caption {
+    background-color: #423f3f96 !important;
+    /* outline: 1px solid red !important; */
