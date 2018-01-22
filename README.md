@@ -25,15 +25,16 @@ Sirve para darte la mejor experiencia posible en ver películas ,desde la búsqu
   
     ==¿Qué tipo de aplicaciones usas para ver películas?
     ¿Cómo buscas tus peliculas?
-     ¿Te gustaría que esta aplicación te recomiende películas según tu historial de películas?
+    ¿Te gustaría que esta aplicación te recomiende películas según tu historial de películas?
     ¿Te gustaría ver las películas que vieron tus amigos?
     ¿Te gustaría acceder a la aplicación que usas con tu cuenta de gmail o facebook?==
-
-   3.En los resultados recavados se encontro que :
-  ![pregunta1](assets/img/pregunta1.png)     
-  ![pregunta2](assets/img/pregunta2.png)       
-  ![pregunta3](assets/img/pregunta3.png) 
-  ![pregunta4](assets/img/pregunta4.png)    
+    
+  3.En los resultados recavados se encontro que :
+  
+  ![pregunta1](assets/img/pregunta1.png)
+  ![pregunta2](assets/img/pregunta2.png)
+  ![pregunta3](assets/img/pregunta3.png)
+  ![pregunta4](assets/img/pregunta4.png)
   ![pregunta5](assets/img/pregunta5.png)       
 
 ### **¿Cómo se organizaron / dividieron el trabajo?**
@@ -56,7 +57,7 @@ Sirve para darte la mejor experiencia posible en ver películas ,desde la búsqu
    - Merging y unificación de estilos - Maythe y Esthefany
     
 4. Estudio de competencia(referencia): 
-	[popcorn-time](https://popcorn-time.to/)
+	![popcorn-time](https://popcorn-time.to/)
     
 5. Lluvia de ideas :
 	![brainstormin](assets/img/lluvia-ideas.jpg)
@@ -67,13 +68,13 @@ Sirve para darte la mejor experiencia posible en ver películas ,desde la búsqu
 7. Creación de prototipado:
 
 - Desktop
-	![desktop1](assets/img/prototype-home.png)
+    ![desktop1](assets/img/prototype-home.png)
     ![desktop2](assets/img/prototype-home-user.png)
     ![desktop3](assets/img/mockup2.jpg)
     ![desktop3](assets/img/mockup1.jpg)
     
 - App
-	![app1](assets/img/mockup3.jpg)
+    ![app1](assets/img/mockup3.jpg)
     ![app2](assets/img/mockup4.jpg)
     ![app3](assets/img/mockup6.png)
 
