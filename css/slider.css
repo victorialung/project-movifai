@@ -10,3 +10,20 @@
 .color:hover {
     background-color: #757575;
 }
+.img-slider {
+    opacity: 0.6;
+    filter:blur(1px);
+}
+.container-btn {
+    margin:auto;
+    text-align: center;
+}
+#btn-login {
+    position: relative;
+    z-index: 1001;
+    margin-top:35% !important;
+    /* left:25%; */
+  }
+/* .caption {
+    background-color: #423f3f96 !important;
+    /* outline: 1px solid red !important; */
