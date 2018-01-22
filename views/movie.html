@@ -11,9 +11,58 @@
     <link rel="stylesheet" href="../css/movie.css">
 </head>
 <body>
+  <nav class="bg-primary" id="nav-search">
+    <div class="nav-wrapper row " id="nab-wrapper">
+      <div class="col s4 m4 l4 left-align icon-logo" id="icon-logo">
+        <a href="#"><img class="responsive-img logo"src="../assets/img/logo-1.png" alt="logo"></a>
+      </div>
+      <div class="col m2 l2 hide-on-small-only right text-align-center">
+        <a href="home.html">HOME</a>
+      </div>
+      <div class="col m2 l2 hide-on-small-only right search-div text-align-center">
+        <a href="search.html">SEARCH</a>
+      </div>
+      <div class="col m2 l2 hide-on-small-only right text-align-center">
+        <a href="#">FRIENDS</a>
+      </div>
+  </nav>
     <div class="row">
         <div id="movie" class="well"></div>
     </div>
+    <!-- section footer desktop/mobile -->
+    <footer class="page-footer bg-primary hide-on-med-and-up" id="nav-search">
+      <div class=" row " id="nab-wrapper">
+        <div class="col s2  left-align icon-home" id="icon-home">
+          <a href="home.html" class="icon-home">
+            <i class="material-icons divider-color">home</i>
+          </a>
+        </div>
+        <div class="col s8  center-align icon-search" id="icon-search">
+          <a href="search.html" class="icon-search">
+            <i class="material-icons divider-color">search</i>
+          </a>
+        </div>
+        <div class="col s2  right-align icon-friends" id="icon-friends">
+          <a href="#" class="icon-friends">
+            <i class="material-icons divider-color">people</i>
+          </a>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer version desktop -->
+    <footer class="page-footer footer-desktop hide-on-small-only" id="nav-search">
+      <div class=" row " id="nab-wrapper">
+        <hr>
+        <div class="flex-row padding-footer">
+          <div class="col m6 l6 text-left">
+            © 2018 Movifai Web-App. All Rights Reserved
+          </div>
+          <div class="col m6 l6 text-right">
+            Movify Girls Team Group.
+          </div>
+        </div>
+      </div>
+    </footer>
     <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
         crossorigin="anonymous"></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>

@@ -18,9 +18,6 @@ header{
   background: -webkit-linear-gradient(to right, #e53935, #e35d5b);
   color: #ffff;
 }
-nav{
-  padding: 10px;
-}
 .flex-row{
   display: flex;
   justify-content:space-between;
@@ -169,4 +166,10 @@ a .icon-home :visited{
 .logo {
   width: 150px;
   height: 100px;
+}
+.div-home{
+  background: #ff5252 ;
+}
+.text-align-center{
+  text-align: center;
 }

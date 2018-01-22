@@ -1,7 +1,40 @@
 body{
-    background: black;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  background: #000000;
 }
-
+.logo {
+  width: 150px;
+  height: 100px;
+}
+.bg-primary {
+ background-color: #212121;
+}
 .active-color {
     background: #ff5252 !important;
+}
+.padding-footer {
+ padding: 0 10px;
+}
+.page-footer {
+ position: fixed;
+ bottom: 0;
+ left: 0;
+ width: 100%
+}
+.text-left {
+ text-align: left;
+}
+.text-right {
+ text-align: right;
+}
+.footer-desktop {
+ padding:0;
+ z-index: 1001;
+ background-color: #212121;
+}
+.divider-color {
+ color: #bdbdbd;
 }

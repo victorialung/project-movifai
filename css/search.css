@@ -185,4 +185,9 @@ a .icon-home :visited{
 /* .icon-footer {
   padding-top: 10px;
 } */
-
+.search-div{
+  background: #ff5252 ;
+}
+.text-align-center{
+  text-align: center;
+}
